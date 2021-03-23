@@ -34,6 +34,8 @@ function HeroSection() {
             to="portfolio"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
+            primary="true"
+            dark="true"
           >
             View my work {hover ? <ArrowDown /> : <ArrowFoward />}
           </HeroButton>
