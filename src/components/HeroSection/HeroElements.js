@@ -4,7 +4,7 @@ import { MdArrowDownward, MdArrowForward } from "react-icons/md";
 export const HeroContainer = styled.div`
   background: #0c0c0c;
   display: flex;
-  justify-content: center;
+ justify-content: left;
   align-items: center;
   padding: 0 30px;
   height: 800px;
@@ -39,13 +39,13 @@ export const HeroContent = styled.div`
   padding: 8px 24px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
 `;
 
 export const HeroH1 = styled.h1`
   color: #fff;
   font-size: 48px;
-  text-align: center;
+  text-align: left;
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -74,7 +74,7 @@ export const HeroBtnWrapper = styled.div`
   margin-top: 32px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
 `;
 
 export const ArrowFoward = styled(MdArrowForward)`

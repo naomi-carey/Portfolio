@@ -4,6 +4,7 @@ import { Link as LinkScroll } from "react-scroll";
 
 export const Nav = styled.nav`
   background: #000;
+  // background-color: transparent;
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -25,6 +26,7 @@ export const NavbarContainer = styled.div`
   width: 100%;
   padding: 0 24px;
   max-width: 1100px;
+  
 `;
 
 export const NavLogo = styled(LinkRouter)`

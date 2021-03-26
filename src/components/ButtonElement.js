@@ -15,6 +15,7 @@ export const HeroButton = styled(Link)`
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
+ width: 200px;
 
   &:hover {
     transition: all 0.2s ease-in-out;
