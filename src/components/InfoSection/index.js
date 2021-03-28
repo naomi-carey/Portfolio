@@ -1,6 +1,6 @@
 import React from "react";
 import { ImgWrap } from "./InfoElements";
-import { Button } from "react-scroll";
+import { HeroButton } from "../ButtonElements";
 import {
   InfoContainer,
   InfoWrapper,
@@ -15,25 +15,52 @@ import {
   Img,
 } from "./InfoElements";
 
-const InfoSection = () => {
+const InfoSection = ({
+  lightBg,
+  id,
+  imgStart,
+  topLine,
+  lightText,
+  headline,
+  darkText,
+  description,
+  buttonLabel,
+  alt,
+  img,
+  primary,
+  dark,
+  dark2,
+}) => {
   return (
     <>
-      <InfoContainer>
+      <InfoContainer lightBg={lightBg} id={id}>
         <InfoWrapper>
-          <InfoRow>
+          <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
-                <TopLine>TopLine</TopLine>
-                <Heading>Heading</Heading>
-                <SubTitle>SubT=title</SubTitle>
+                <TopLine>{topLine}</TopLine>
+                <Heading lightText={lightText}>{headline}</Heading>
+                <SubTitle darkText={darkText}>{description}</SubTitle>
                 <BtnWrap>
-                  <Button to="home" />
+                  <HeroButton
+                    to="home"
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={-80}
+                    primary={primary ? 1 : 0}
+                    dark={dark ? 1 : 0}
+                    dark2={dark2 ? 1 : 0}
+                  >
+                    {buttonLabel}
+                  </HeroButton>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img />
+                <Img src={img} alt={alt} />
               </ImgWrap>
             </Column2>
           </InfoRow>

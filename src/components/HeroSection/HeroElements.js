@@ -4,7 +4,7 @@ import { MdArrowDownward, MdArrowForward } from "react-icons/md";
 export const HeroContainer = styled.div`
   background: #0c0c0c;
   display: flex;
- justify-content: left;
+  justify-content: left;
   align-items: center;
   padding: 0 30px;
   height: 800px;
