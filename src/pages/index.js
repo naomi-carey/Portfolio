@@ -8,6 +8,7 @@ import {
   homeObjThree,
   homeObjTwo,
 } from "../components/InfoSection/Data";
+import Projects from "../components/Projects";
 
 function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,6 +23,7 @@ function Home() {
       <HeroSection />
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
+      <Projects />
       <InfoSection {...homeObjThree} />
     </>
   );

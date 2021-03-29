@@ -19,18 +19,18 @@ export const homeObjOne = {
 };
 
 export const homeObjTwo = {
-  id: "Work History",
+  id: "work history",
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
   topLine: "My CV & Resume",
-  headline: " Web Developer, Content Creator and Technical Writer. ",
+  headline: "Tried, trued and tested, seasoned IT expert. ",
   description:
-    " I am passionate about the human experience and I believe that humans are more than just their relationships with technology.",
+    "Experience as a systems engineer, project manager, technical writer and web developer.",
   buttonLabel: "See my CV/Resume",
   imgStart: true,
-  img: require("../../images/svg-2.svg").default,
-  alt: "Naomi",
+  img: require("../../images/svg-4.svg").default,
+  alt: "My CV",
   dark: false,
   primary: true,
   darkText: false,
@@ -39,21 +39,21 @@ export const homeObjTwo = {
 };
 
 export const homeObjThree = {
-  id: "Portfolio",
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+  id: "portfolio",
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
   topLine: "See my Work",
-  headline: " Web Developer, Content Creator and Technical Writer. ",
+  headline: " Check out my work. ",
   description:
-    " I am passionate about the human experience and I believe that humans are more than just their relationships with technology.",
+    " Below you will find samples of my work including web development and also documentation.",
   buttonLabel: "See my CV/Resume",
   imgStart: false,
   img: require("../../images/svg-3.svg").default,
   alt: "Naomi",
-  dark: true,
-  primary: true,
+  dark: false,
+  primary: false,
   darkText: false,
-  primary: true,
-  darkText: false,
+  primary: false,
+  darkText: true,
 };
