@@ -1,7 +1,7 @@
 import React from "react";
 import Icon1 from "../../images/authxrs2.png";
 import Icon2 from "../../images/safertravels2.png";
-import Icon3 from "../../images/codecafe.png";
+import Icon3 from "../../images/codecafe2.png";
 import {
   ProjectsContainer,
   ProjectsH1,
@@ -14,8 +14,9 @@ import {
 
 const Projects = () => {
   return (
-    <ProjectsContainer id="projects">
+    <ProjectsContainer id="portfolio">
       <ProjectsH1>My Projects</ProjectsH1>
+
       <ProjectsWrapper>
         <ProjectsCard>
           <ProjectsIcon src={Icon1} />

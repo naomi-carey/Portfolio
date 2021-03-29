@@ -39,11 +39,11 @@ export const homeObjTwo = {
 };
 
 export const homeObjThree = {
-  id: "portfolio",
+  id: "contact",
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topLine: "See my Work",
+  topLine: "Contact me",
   headline: " Check out my work. ",
   description:
     " Below you will find samples of my work including web development and also documentation.",
