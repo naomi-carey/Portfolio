@@ -22,7 +22,7 @@ const Projects = () => {
           <ProjectsIcon src={Icon1} />
           <ProjectsH2>Authxrs Publishing House</ProjectsH2>
           <ProjectsP>
-            Authors is a socially aware and sustainable publishing house
+            Authors is a socially aware and sustainable publishing house app
             supporting suppressed voices worldwide.
           </ProjectsP>
         </ProjectsCard>
@@ -30,9 +30,8 @@ const Projects = () => {
           <ProjectsIcon src={Icon2} />
           <ProjectsH2>Safer Travel</ProjectsH2>
           <ProjectsP>
-            Working to restore confidence in travel during the COVID pandemic by
-            providing consumers access to data that really matters when they
-            need it.
+            Working to restore confidence in travel during COVID by providing
+            consumers access to real time data.
           </ProjectsP>
         </ProjectsCard>
         <ProjectsCard>
@@ -40,8 +39,7 @@ const Projects = () => {
           <ProjectsH2>Code Cafe</ProjectsH2>
           <ProjectsP>
             A shared work & play place bringing your two loves together, coffee
-            and coding. This is a place of exception, where coffee and code
-            fusion (like Goku an Vegeta come together but stronger).
+            and coding. Like Goku an Vegeta come together but stronger.
           </ProjectsP>
         </ProjectsCard>
       </ProjectsWrapper>
