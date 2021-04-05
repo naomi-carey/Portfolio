@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProjectsContainer = styled.div`
-  height: 800px;
+  height: 825px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,6 +28,7 @@ export const ProjectsWrapper = styled.div`
 
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
+    padding: 10px 0;
 
     @media screen and (max-width: 768px) {
       grid-template-columns: 1fr;

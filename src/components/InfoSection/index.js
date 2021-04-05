@@ -1,6 +1,7 @@
 import React from "react";
 import { ImgWrap } from "./InfoElements";
 import { HeroButton } from "../ButtonElements";
+import NC from "../../images/NC_CV.png";
 import {
   InfoContainer,
   InfoWrapper,
