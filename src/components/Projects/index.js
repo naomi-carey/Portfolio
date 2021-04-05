@@ -2,6 +2,7 @@ import React from "react";
 import Icon1 from "../../images/authxrs2.png";
 import Icon2 from "../../images/safertravels2.png";
 import Icon3 from "../../images/codecafe2.png";
+import Icon4 from "../../images/mydocuments.svg";
 import {
   ProjectsContainer,
   ProjectsH1,
@@ -40,6 +41,13 @@ const Projects = () => {
           <ProjectsP>
             A shared work & play place bringing your two loves together, coffee
             and coding. Like Goku an Vegeta come together but stronger.
+          </ProjectsP>
+        </ProjectsCard>
+        <ProjectsCard>
+          <ProjectsIcon src={Icon4} />
+          <ProjectsH2>Technical Documentation</ProjectsH2>
+          <ProjectsP>
+            Samples of my technical documentation I have produced.
           </ProjectsP>
         </ProjectsCard>
       </ProjectsWrapper>

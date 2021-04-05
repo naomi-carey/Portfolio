@@ -25,7 +25,7 @@ function Home() {
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
       <Projects />
-      <InfoSection {...homeObjThree} />
+      {/* <InfoSection {...homeObjThree} /> */}
       <Footer />
     </>
   );

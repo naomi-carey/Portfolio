@@ -38,22 +38,22 @@ export const homeObjTwo = {
   darkText: true,
 };
 
-export const homeObjThree = {
-  id: "contact",
-  lightBg: true,
-  lightText: false,
-  lightTextDesc: false,
-  topLine: "Contact me",
-  headline: " Check out my work. ",
-  description:
-    " Below you will find samples of my work including web development and also documentation.",
-  buttonLabel: "See my CV/Resume",
-  imgStart: false,
-  img: require("../../images/svg-3.svg").default,
-  alt: "Naomi",
-  dark: false,
-  primary: false,
-  darkText: false,
-  primary: false,
-  darkText: true,
-};
+// export const homeObjThree = {
+//   id: "contact",
+//   lightBg: true,
+//   lightText: false,
+//   lightTextDesc: false,
+//   topLine: "Contact me",
+//   headline: " Check out my work. ",
+//   description:
+//     " Below you will find samples of my work including web development and also documentation.",
+//   buttonLabel: "See my CV/Resume",
+//   imgStart: false,
+//   img: require("../../images/svg-3.svg").default,
+//   alt: "Naomi",
+//   dark: false,
+//   primary: false,
+//   darkText: false,
+//   primary: false,
+//   darkText: true,
+// };

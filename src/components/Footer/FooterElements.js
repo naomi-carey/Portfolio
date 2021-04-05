@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { BsChevronDoubleUp } from "react-icons/bs";
 
 export const FooterContainer = styled.footer`
   background-color: #101522;
@@ -107,4 +108,8 @@ export const SocialIcons = styled.div`
 export const SocialIconLink = styled.a`
   color: #fff;
   font-size: 24px;
+`;
+
+export const CheveronUpIcon = styled(BsChevronDoubleUp)`
+  color: #fff;
 `;

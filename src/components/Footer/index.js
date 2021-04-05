@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { animateScroll as scroll } from "react-scroll";
 import {
   FooterContainer,
   FooterWrap,
@@ -14,9 +15,14 @@ import {
   WebsiteRights,
   SocialIcons,
   SocialIconLink,
+  CheveronUpIcon,
 } from "./FooterElements";
 
 const Footer = () => {
+  const toggleToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <FooterContainer>
       <FooterWrap>
@@ -55,9 +61,12 @@ const Footer = () => {
         </FooterLinksContainer> */}
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/">Logo</SocialLogo>
+            <SocialLogo to="/">
+              <CheveronUpIcon onClick={toggleToTop} />
+            </SocialLogo>
+
             <WebsiteRights>
-              MyLogo © {new Date().getFullYear()}
+              Naomi Carey © {new Date().getFullYear()}
               &nbsp; All rights reserved.
             </WebsiteRights>
             <SocialIcons>
