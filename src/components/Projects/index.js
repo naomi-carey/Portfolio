@@ -47,7 +47,8 @@ const Projects = () => {
           <ProjectsIcon src={Icon4} />
           <ProjectsH2>Technical Documentation</ProjectsH2>
           <ProjectsP>
-            Samples of my technical documentation I have produced.
+            Samples of technical documentation produced for customer facing
+            audiences as well as developers, install engineers and parnters.
           </ProjectsP>
         </ProjectsCard>
       </ProjectsWrapper>

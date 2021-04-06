@@ -6,9 +6,14 @@ export const InfoContainer = styled.div`
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
+
+    @media screen and (max-width: 480px) {
+      padding: 0 0;
+      margin-bottom: 4px;
+    }
   }
 `;
-// changed above padding from 100px
+// added above media query at 480
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
@@ -32,6 +37,10 @@ export const InfoRow = styled.div`
     grid-template-areas: ${({ imgStart }) =>
       imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
   }
+
+  @media screen and (max-width: 480px) {
+    height: 750px;
+  }
 `;
 
 export const Column1 = styled.div`
@@ -50,6 +59,9 @@ export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
+  @media screen and (max-width: 480px) {
+    padding-bottom: 0px;
+  }
 `;
 export const TopLine = styled.p`
   color: #01bf71;

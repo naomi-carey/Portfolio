@@ -9,11 +9,11 @@ export const ProjectsContainer = styled.div`
   background: #010606;
 
   @media screen and (max-width: 768px) {
-    height: 1100px;
+    height: 1000px;
   }
 
   @media screen and (max-width: 480px) {
-    height: 1300px;
+    height: 1550px;
   }
 `;
 
@@ -31,6 +31,11 @@ export const ProjectsWrapper = styled.div`
     padding: 10px 0;
 
     @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+      padding: 0 20px;
+    }
+
+    @media screen and (max-width: 480px) {
       grid-template-columns: 1fr;
       padding: 0 20px;
     }
@@ -69,6 +74,7 @@ export const ProjectsH1 = styled.h1`
 
   @media screen and (max-width: 480) {
     font-size: 2rem;
+    margin-bottom: 4px;
   }
 `;
 
