@@ -9,7 +9,7 @@ export const homeObjOne = {
     " I am passionate about the human experience and I believe that humans are more than just their relationships with technology.",
   buttonLabel: "See my CV/Resume",
   imgStart: false,
-  img: require("../../images/NC.jpg").default,
+  img: require("../../images/NC_black_white.jpg").default,
   alt: "Naomi",
   dark: true,
   primary: true,
