@@ -82,6 +82,10 @@ export const SocialMediaWrap = styled.div`
   }
 `;
 
+export const SocialChevronWrap = styled.div`
+  display: flex;
+  justify-content: center;
+`;
 export const SocialLogo = styled(Link)`
   color: #fff;
   justify-self: start;
@@ -112,4 +116,9 @@ export const SocialIconLink = styled.a`
 
 export const CheveronUpIcon = styled(BsChevronDoubleUp)`
   color: #fff;
+
+  ${"" /* &:hover {
+    color: #01bf71;
+    transistion: 0.3s ease-out;
+  } */}
 `;

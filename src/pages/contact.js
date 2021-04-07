@@ -1,12 +1,13 @@
 import React from "react";
+import Contact from "../components/Contact";
 
 import styled from "styled-components";
 
 const ContactPage = () => {
   return (
-    <ContactWrapper>
-      <h1>Contact page</h1>
-    </ContactWrapper>
+    <>
+      <Contact />
+    </>
   );
 };
 

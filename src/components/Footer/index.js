@@ -16,6 +16,7 @@ import {
   SocialIcons,
   SocialIconLink,
   CheveronUpIcon,
+  SocialChevronWrap,
 } from "./FooterElements";
 
 const Footer = () => {
@@ -60,11 +61,12 @@ const Footer = () => {
           </FooterLinksWrapper>
         </FooterLinksContainer> */}
         <SocialMedia>
-          <SocialMediaWrap>
+          <SocialChevronWrap>
             <SocialLogo to="/">
               <CheveronUpIcon onClick={toggleToTop} />
             </SocialLogo>
-
+          </SocialChevronWrap>
+          <SocialMediaWrap>
             <WebsiteRights>
               Naomi Carey © {new Date().getFullYear()}
               &nbsp; All rights reserved.
