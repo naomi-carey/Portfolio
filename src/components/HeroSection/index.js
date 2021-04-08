@@ -26,7 +26,7 @@ function HeroSection() {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Hello, I'm Naomi.</HeroH1>
+        <HeroH1>Hello, I'm Naomi Carey.</HeroH1>
         <HeroH1>I'm a web developer.</HeroH1>
         {/* <HeroP>Contact Me</HeroP> */}
         <HeroBtnWrapper>

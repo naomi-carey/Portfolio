@@ -29,7 +29,7 @@ export const homeObjTwo = {
     "Experience as a systems engineer, project manager, technical writer and web developer.",
   buttonLabel: "See my CV/Resume",
   imgStart: true,
-  img: require("../../images/svg-4.svg").default,
+  img: require("../../images/svg-5.svg").default,
   alt: "My CV",
   dark: false,
   primary: true,

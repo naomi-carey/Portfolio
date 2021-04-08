@@ -99,7 +99,7 @@ export const SocialLogo = styled(Link)`
 `;
 
 export const WebsiteRights = styled.div`
-  color: #fff;
+  color: #8f9aa7;
   margin-bottom: 16px;
 `;
 export const SocialIcons = styled.div`
@@ -112,13 +112,28 @@ export const SocialIcons = styled.div`
 export const SocialIconLink = styled.a`
   color: #fff;
   font-size: 24px;
+  background: ##262f38;
+  padding: 3px;
+
+  &:hover {
+    background: #fff;
+    color: black;
+    transition: all 0.2s ease-in-out;
+  }
 `;
 
 export const CheveronUpIcon = styled(BsChevronDoubleUp)`
   color: #fff;
+  padding: 3px;
+
+  &:hover {
+    background: #fff;
+    color: black;
+    transition: all 0.2s ease-in-out;
+  }
 
   ${"" /* &:hover {
-    color: #01bf71;
+    color: #009688;
     transistion: 0.3s ease-out;
   } */}
 `;
