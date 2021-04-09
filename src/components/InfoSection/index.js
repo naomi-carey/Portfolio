@@ -1,7 +1,8 @@
 import React from "react";
 import { ImgWrap } from "./InfoElements";
 import { HeroButton } from "../ButtonElements";
-import NC from "../../images/NC_CV.png";
+// import NC from "../../images/NC_CV.png";
+import Resume from "../Resume/index";
 import {
   InfoContainer,
   InfoWrapper,
@@ -44,7 +45,7 @@ const InfoSection = ({
                 <SubTitle darkText={darkText}>{description}</SubTitle>
                 <BtnWrap>
                   <HeroButton
-                    to="home"
+                    to="/resume"
                     smooth={true}
                     duration={500}
                     spy={true}

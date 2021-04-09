@@ -72,6 +72,7 @@ export const FormH1 = styled.h1`
   font-size: 20px;
   font-weight: 400;
   text-align: center;
+  user-select: none;
 `;
 export const FormLabel = styled.label`
   margin-bottom: 8px;
@@ -84,7 +85,6 @@ export const FormInput = styled.input`
   margin-bottom: 32px;
   border: none;
   border-radius: 4px;
-
   &:focus {
     outline: none;
   }
@@ -98,7 +98,6 @@ export const FormButton = styled.button`
   color: #fff;
   font-size: 20px;
   cursor: pointer;
-
   &:focus {
     outline: none;
   }

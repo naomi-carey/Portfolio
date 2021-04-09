@@ -67,10 +67,10 @@ const Projects = () => {
         <ProjectsCard>
           <ProjectsIcon src={Icon4} />
           <ProjectsH2>Technical Documentation</ProjectsH2>
-          <ProjectsP>
-            Samples of technical documentation produced for customer facing
-            audiences as well as developers, install engineers and parnters.
-          </ProjectsP>
+          <ProjectsP>Samples of technical documentation.</ProjectsP>
+          <ProjectButton href="https://safejourneys.atlassian.net/wiki/spaces/AD/pages/201588744/Integrate+Stripe+payment+system+into+React">
+            Learn more
+          </ProjectButton>
         </ProjectsCard>
       </ProjectsWrapper>
     </ProjectsContainer>
