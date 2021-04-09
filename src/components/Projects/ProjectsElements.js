@@ -93,7 +93,7 @@ export const ProjectsH1 = styled.h1`
   user-select: none;
 `;
 
-export const ProjectButton = styled.button`
+export const ProjectButton = styled.a`
   border-radius: 2px;
   outline: none;
   background: #fff;
