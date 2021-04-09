@@ -71,6 +71,7 @@ export const TopLine = styled.p`
   letter-space: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
+  user-select: none;
 `;
 
 export const Heading = styled.h1`
@@ -78,6 +79,7 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
+  user-select: none;
   color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
   @media screen and (max-width: 480px) {
     font-size: 32px;
@@ -89,6 +91,7 @@ export const SubTitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
+  user-select: none;
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
 `;
 

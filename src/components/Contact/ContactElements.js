@@ -84,6 +84,10 @@ export const FormInput = styled.input`
   margin-bottom: 32px;
   border: none;
   border-radius: 4px;
+
+  &:focus {
+    outline: none;
+  }
 `;
 
 export const FormButton = styled.button`
@@ -94,6 +98,10 @@ export const FormButton = styled.button`
   color: #fff;
   font-size: 20px;
   cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
 
   &:hover {
     transition: all 0.2s ease-in-out;

@@ -1,6 +1,18 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
 import { BsChevronDoubleUp } from "react-icons/bs";
+
+// const rotate = keyframes`
+// from {
+//   transform: rotate(0deg);
+// }
+
+// to {
+
+//   transform: rotate(360deg);
+// }
+
+// `;
 
 export const FooterContainer = styled.footer`
   background-color: #101522;
@@ -111,14 +123,23 @@ export const SocialIcons = styled.div`
 
 export const SocialIconLink = styled.a`
   color: #fff;
-  font-size: 24px;
-  background: ##262f38;
+  font-size: 24px; 
+${"" /* background: #262f38; */}
   padding: 3px;
+  
+ 
+
+ 
+  }
 
   &:hover {
     background: #fff;
     color: black;
-    transition: all 0.2s ease-in-out;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+    ${"" /* animation: ${rotate} 2s linear infinite; */}
+
+    
   }
 `;
 
@@ -129,7 +150,8 @@ export const CheveronUpIcon = styled(BsChevronDoubleUp)`
   &:hover {
     background: #fff;
     color: black;
-    transition: all 0.2s ease-in-out;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
   }
 
   ${"" /* &:hover {

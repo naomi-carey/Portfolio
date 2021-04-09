@@ -37,7 +37,18 @@ function HeroSection() {
             primary="true"
             dark="true"
           >
-            View my work {hover ? <ArrowDown /> : <ArrowFoward />}
+            View my work
+            {hover ? (
+              <ArrowDown
+                style={{
+                  transistion: "all 0.6s ease-in-out",
+                  transform: `rotate(${360}deg)`,
+                }}
+              />
+            ) : (
+              <ArrowFoward />
+            )}
+            {/* View my work {hover ? <ArrowDown /> : <ArrowFoward />} */}
           </HeroButton>
         </HeroBtnWrapper>
       </HeroContent>

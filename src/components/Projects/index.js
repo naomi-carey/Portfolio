@@ -3,6 +3,7 @@ import Icon1 from "../../images/authxrs2.png";
 import Icon2 from "../../images/safertravels2.png";
 import Icon3 from "../../images/codecafe2.png";
 import Icon4 from "../../images/mydocuments.svg";
+import { useHistory } from "react-router-dom";
 import {
   ProjectsContainer,
   ProjectsH1,
@@ -11,9 +12,17 @@ import {
   ProjectsIcon,
   ProjectsH2,
   ProjectsP,
+  ProjectButton,
 } from "./ProjectsElements";
 
 const Projects = () => {
+  let history = useHistory();
+  const routeChange = () => {
+    let path = `https://the-authors.netlify.app/`;
+
+    history.push(path);
+  };
+
   return (
     <ProjectsContainer id="portfolio">
       <ProjectsH1>My Projects</ProjectsH1>
@@ -22,10 +31,12 @@ const Projects = () => {
         <ProjectsCard>
           <ProjectsIcon src={Icon1} />
           <ProjectsH2>Authxrs Publishing House</ProjectsH2>
-          <ProjectsP>
+          <ProjectsP>React / Node.js / Styled Components</ProjectsP>
+          {/* <ProjectsP>
             Authors is a socially aware and sustainable publishing house app
             supporting suppressed voices worldwide.
-          </ProjectsP>
+          </ProjectsP> */}
+          <ProjectButton onClick={routeChange}>View the site</ProjectButton>
         </ProjectsCard>
         <ProjectsCard>
           <ProjectsIcon src={Icon2} />
