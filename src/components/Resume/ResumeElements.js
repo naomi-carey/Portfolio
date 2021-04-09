@@ -11,6 +11,15 @@ export const ResumeContainer = styled.div`
   z-index: 0;
   overflow: hidden;
   background: #010101;
+
+  @media screen and (max-width: 768px) {
+    padding: 10px 0;
+   
+
+    @media screen and (max-width: 480px) {
+      padding: 80 0;
+      margin-bottom: 0px;
+    }
 `;
 
 export const ResumeWrapper = styled.div`
@@ -21,6 +30,11 @@ export const ResumeWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 0 50px;
+
+  @media screen and (min-width: 480px) {
+    margin-left: 16px;
+    margin-top: 8px;
+  }
 `;
 
 export const ResumeIcon = styled(Link)`
@@ -45,12 +59,21 @@ export const ResumeH1 = styled.h1`
   letter-space: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
-  margin-top: 90px;
+  ${"" /* margin-top: 90px; */}
   user-select: none;
 `;
 
-export const ResumeImage = styled.image`
-  height: 200px;
-  width: 200px;
+export const ResumeImage = styled.img`
+  height: 750px;
+  width: 625px;
+  object-fit: cover;
   margin-bottom: 10px;
+
+  @media screen and (max-width: 768px) {
+    height: 750px;
+  }
+  @media screen and (max-width: 480px) {
+    height: 450px;
+    width: 350px;
+  }
 `;
