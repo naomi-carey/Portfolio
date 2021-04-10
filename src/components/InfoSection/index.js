@@ -1,8 +1,6 @@
 import React from "react";
 import { ImgWrap } from "./InfoElements";
-import { HeroButton } from "../ButtonElements";
-// import NC from "../../images/NC_CV.png";
-import Resume from "../Resume/index";
+
 import {
   InfoContainer,
   InfoWrapper,
@@ -15,6 +13,7 @@ import {
   SubTitle,
   BtnWrap,
   Img,
+  HeroButton2,
 } from "./InfoElements";
 
 const InfoSection = ({
@@ -44,7 +43,7 @@ const InfoSection = ({
                 <Heading lightText={lightText}>{headline}</Heading>
                 <SubTitle darkText={darkText}>{description}</SubTitle>
                 <BtnWrap>
-                  <HeroButton
+                  <HeroButton2
                     to="/resume"
                     smooth={true}
                     duration={500}
@@ -56,7 +55,7 @@ const InfoSection = ({
                     dark2={dark2 ? 1 : 0}
                   >
                     {buttonLabel}
-                  </HeroButton>
+                  </HeroButton2>
                 </BtnWrap>
               </TextWrapper>
             </Column1>

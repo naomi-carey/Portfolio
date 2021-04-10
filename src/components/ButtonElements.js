@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-scroll";
 
+//changed styled(Link) so styled.button
 export const HeroButton = styled(Link)`
   border-radius: 50px;
   background: ${({ primary }) => (primary ? "#009688" : "#010606")};

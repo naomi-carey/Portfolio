@@ -6,7 +6,7 @@ import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer";
 import {
   homeObjOne,
-  homeObjThree,
+  // homeObjThree,
   homeObjTwo,
 } from "../components/InfoSection/Data";
 import Projects from "../components/Projects";

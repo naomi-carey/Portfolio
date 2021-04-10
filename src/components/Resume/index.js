@@ -11,7 +11,7 @@ import CvIcon from "../../images/cv2.png";
 function Resume() {
   return (
     <>
-      <ResumeContainer>
+      <ResumeContainer id="/resume">
         <ResumeIcon to="/">Home</ResumeIcon>
 
         <ResumeWrapper>

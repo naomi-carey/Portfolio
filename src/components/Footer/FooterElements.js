@@ -2,18 +2,6 @@ import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
 import { BsChevronDoubleUp } from "react-icons/bs";
 
-// const rotate = keyframes`
-// from {
-//   transform: rotate(0deg);
-// }
-
-// to {
-
-//   transform: rotate(360deg);
-// }
-
-// `;
-
 export const FooterContainer = styled.footer`
   background-color: #101522;
 `;

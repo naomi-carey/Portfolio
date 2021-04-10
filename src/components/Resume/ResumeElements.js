@@ -14,12 +14,12 @@ export const ResumeContainer = styled.div`
 
   @media screen and (max-width: 768px) {
     padding: 10px 0;
-   
+  }
 
-    @media screen and (max-width: 480px) {
-      padding: 80 0;
-      margin-bottom: 0px;
-    }
+  @media screen and (max-width: 480px) {
+    padding: 80 0;
+    margin-bottom: 0px;
+  }
 `;
 
 export const ResumeWrapper = styled.div`
