@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
 const cors = require("cors");
-const nodemailer = required("nodemailer");
-const ck = require(ckey);
+const nodemailer = require("nodemailer");
+const ck = require("ckey");
 const emailGoogle = ck.EMAIL;
 const passwdGoogle = ck.PASSWORD;
 

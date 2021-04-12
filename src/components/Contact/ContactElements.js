@@ -114,15 +114,6 @@ export const ContactLogoBorder = styled.div`
   }
 `;
 
-// export const FormLogoImage = styled.img`
-//   width: 100px;
-
-//   position: absolute;
-//   top: 15px;
-//   left: 5%;
-//   z-index: 101;
-// `;
-
 export const FormContent = styled.div`
   height: 100%;
   display: flex;

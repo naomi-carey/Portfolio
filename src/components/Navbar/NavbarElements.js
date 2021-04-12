@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { Link as LinkRouter } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
-import Logo from "../../images/logo-thick2.png";
 
 export const Nav = styled.nav`
   background: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")};

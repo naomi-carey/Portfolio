@@ -81,13 +81,6 @@ export const HeroBtnWrapper = styled.div`
 export const ArrowFoward = styled(MdArrowForward)`
   margin-left: 8px;
   font-size: 20px;
-
-  ${
-    "" /* &:hover {
-    transform: rotate(0.5turn);
-    transistion: all 0.5s ease-in-out;
-  } */
-  }
 `;
 
 export const ArrowDown = styled(MdArrowDownward)`

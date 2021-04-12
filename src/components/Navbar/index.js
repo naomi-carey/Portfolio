@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { animateScroll as scroll } from "react-scroll";
-// import Logo from "../../images/initials.jpg";
 
 import {
   Nav,
@@ -13,7 +12,6 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink,
-  LogoImage,
   NavLogoBorder,
 } from "./NavbarElements";
 
@@ -85,17 +83,7 @@ const Navbar = ({ toggle }) => {
                 MyWork
               </NavLinks>
             </NavItem>
-            <NavItem>
-              {/* <NavLinks
-                to="contact"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-              >
-                Contact
-              </NavLinks> */}
-            </NavItem>
+            <NavItem></NavItem>
           </NavMenu>
           <NavBtn>
             <NavBtnLink to="/contact">Contact</NavBtnLink>

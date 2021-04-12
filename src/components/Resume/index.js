@@ -1,7 +1,6 @@
 import React from "react";
 import {
   ResumeContainer,
-  ResumeH1,
   ResumeWrapper,
   ResumeImage,
   ResumeIcon,
@@ -15,7 +14,6 @@ function Resume() {
         <ResumeIcon to="/">Home</ResumeIcon>
 
         <ResumeWrapper>
-          {/* <ResumeH1>My Resume / CV</ResumeH1> */}
           <ResumeImage src={CvIcon} />
         </ResumeWrapper>
       </ResumeContainer>

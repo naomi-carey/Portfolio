@@ -112,7 +112,7 @@ export const SocialIcons = styled.div`
 export const SocialIconLink = styled.a`
   color: #fff;
   font-size: 24px; 
-${"" /* background: #262f38; */}
+
   padding: 3px;
   
  
@@ -125,8 +125,7 @@ ${"" /* background: #262f38; */}
     color: black;
     border-radius: 2px;
     transition: all 0.3s ease-in-out;
-    ${"" /* animation: ${rotate} 2s linear infinite; */}
-
+   
     
   }
 `;
@@ -141,9 +140,4 @@ export const CheveronUpIcon = styled(BsChevronDoubleUp)`
     border-radius: 2px;
     transition: all 0.3s ease-in-out;
   }
-
-  ${"" /* &:hover {
-    color: #009688;
-    transistion: 0.3s ease-out;
-  } */}
 `;

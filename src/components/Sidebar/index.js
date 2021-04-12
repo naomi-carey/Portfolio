@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   SideBarContainer,
   Icon,
@@ -27,9 +28,6 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SideBarLink to="portfolio" onClick={toggle}>
             Portfolio
           </SideBarLink>
-          {/* <SideBarLink to="contact" onClick={toggle}>
-            Contact
-          </SideBarLink> */}
         </SideBarMenu>
         <SideBtnWrap>
           <SideBarRoute to="/contact">Contact Me</SideBarRoute>

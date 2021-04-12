@@ -29,7 +29,6 @@ const Contact = () => {
       message: message.value,
     };
 
-    //REMEMBER TO CHECK IF LOCAL HOST IS 3000 or 5000
     let response = await fetch("http://localhost:5000/contact", {
       method: "POST",
       headers: {

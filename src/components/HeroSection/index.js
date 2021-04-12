@@ -7,7 +7,6 @@ import {
   VideoBg,
   HeroContent,
   HeroH1,
-  // HeroP,
   HeroBtnWrapper,
   ArrowFoward,
   ArrowDown,
@@ -28,7 +27,7 @@ function HeroSection() {
       <HeroContent>
         <HeroH1>Hello, I'm Naomi Carey.</HeroH1>
         <HeroH1>I'm a web developer.</HeroH1>
-        {/* <HeroP>Contact Me</HeroP> */}
+
         <HeroBtnWrapper>
           <HeroButton
             to="portfolio"
