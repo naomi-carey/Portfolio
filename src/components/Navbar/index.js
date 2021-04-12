@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { animateScroll as scroll } from "react-scroll";
+// import Logo from "../../images/initials.jpg";
 
 import {
   Nav,
@@ -12,6 +13,8 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink,
+  LogoImage,
+  NavLogoBorder,
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
@@ -38,8 +41,13 @@ const Navbar = ({ toggle }) => {
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <NavLogo to="/" onClick={toggleHome}>
-            Home
+            <NavLogoBorder>
+              <button>
+                <span style={{ fontFamily: "Dancing Script" }}>NC</span>
+              </button>
+            </NavLogoBorder>
           </NavLogo>
+
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
@@ -63,7 +71,7 @@ const Navbar = ({ toggle }) => {
                 spy={true}
                 exact="true"
               >
-                Work History
+                MySkills
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -74,7 +82,7 @@ const Navbar = ({ toggle }) => {
                 spy={true}
                 exact="true"
               >
-                Portfolio
+                MyWork
               </NavLinks>
             </NavItem>
             <NavItem>

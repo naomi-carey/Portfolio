@@ -7,7 +7,7 @@ export const homeObjOne = {
   headline: " Web Developer, Content Creator and Technical Writer. ",
   description:
     " I am passionate about the human experience and I believe that humans are more than just their relationships with technology.",
-  buttonLabel: "See my CV/Resume",
+  buttonLabel: "Learn More",
   imgStart: false,
   img: require("../../images/NC_black_white.jpg").default,
   alt: "Naomi",
@@ -29,7 +29,7 @@ export const homeObjTwo = {
     "Experience as a systems engineer, project manager, technical writer and web developer.",
   buttonLabel: "See my CV/Resume",
   imgStart: true,
-  img: require("../../images/svg-5.svg").default,
+  img: require("../../images/word-cloud3.png").default,
   alt: "My CV",
   dark: false,
   primary: true,

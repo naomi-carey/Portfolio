@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link as LinkRouter } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
+import Logo from "../../images/logo-thick2.png";
 
 export const Nav = styled.nav`
   background: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")};
@@ -38,6 +39,90 @@ export const NavLogo = styled(LinkRouter)`
   margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
+`;
+
+export const NavLogoBorder = styled.div`
+  button {
+    position: relative;
+    width: 90px;
+    font-size: 30px;
+    height: 48px;
+
+    margin-top: 15px;
+    background: none;
+
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 0;
+
+    box-sizing: content-box;
+    border: 2px solid transparent;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button::before,
+  button::after,
+  span::before,
+  span::after {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 10px;
+    position: absolute;
+  }
+
+  button::before {
+    top: -2px;
+    left: -2px;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    transition: 0.5s all;
+  }
+  button::after {
+    top: -2px;
+    right: -2px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    transition: 0.5s all;
+  }
+  span::before {
+    bottom: -2px;
+    left: -2px;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    transition: 0.5s all;
+  }
+  span::after {
+    bottom: -2px;
+    right: -2px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    transition: 0.5s all;
+  }
+
+  button:hover::before,
+  button:hover::after {
+    width: 50px;
+    height: 50px;
+  }
+
+  button:hover span::before,
+  button:hover span::after {
+    width: 50px;
+    height: 50px;
+  }
+`;
+
+export const LogoImage = styled.img`
+  width: 100px;
+
+  position: absolute;
+  top: 15px;
+  left: 5%;
+  z-index: 101;
 `;
 
 export const MobileIcon = styled.div`

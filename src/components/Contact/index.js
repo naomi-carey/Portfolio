@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+
 import {
   FormButton,
   FormContent,
@@ -10,24 +11,59 @@ import {
   Icon,
   Form,
   Text,
+  FormLogoImage,
+  ContactLogoBorder,
+  FormInputMessage,
 } from "./ContactElements";
 
 const Contact = () => {
+  const [status, setStatus] = useState("Submit");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+    const { name, email, message } = e.target.elements;
+    let details = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    };
+
+    //REMEMBER TO CHECK IF LOCAL HOST IS 3000 or 5000
+    let response = await fetch("http://localhost:5000/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(details),
+    });
+
+    setStatus("Submit");
+    let result = await response.json();
+    alert(result.status);
+  };
+
   return (
     <>
       <Container>
         <FormWrap>
-          <Icon to="/">Home</Icon>
+          <Icon to="/">
+            <ContactLogoBorder>
+              <button>
+                <span style={{ fontFamily: "Dancing Script" }}>NC</span>
+              </button>
+            </ContactLogoBorder>
+          </Icon>
           <FormContent>
-            <Form action="#">
+            <Form onSubmit={handleSubmit}>
               <FormH1>Have a question or want to work together?</FormH1>
               <FormLabel htmlFor="for">Name</FormLabel>
-              <FormInput type="text" required />
+              <FormInput id="name" type="text" required />
               <FormLabel htmlFor="for">Email</FormLabel>
-              <FormInput type="email" required />
+              <FormInput id="email" type="email" required />
               <FormLabel htmlFor="for">Message</FormLabel>
-              <FormInput type="email" required />
-              <FormButton type="submit">Submit</FormButton>
+              <FormInputMessage id="message" type="text" required />
+              <FormButton type="submit">{status}</FormButton>
               {/* <Text>Forgot password</Text> */}
             </Form>
           </FormContent>

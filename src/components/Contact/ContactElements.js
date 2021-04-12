@@ -38,6 +38,91 @@ export const Icon = styled(Link)`
   }
 `;
 
+export const ContactLogoBorder = styled.div`
+  button {
+    position: relative;
+    width: 90px;
+    font-size: 30px;
+    height: 48px;
+
+    margin-top: 80px;
+    margin-left: 31px;
+    background: none;
+
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 0;
+
+    box-sizing: content-box;
+    border: 2px solid transparent;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button::before,
+  button::after,
+  span::before,
+  span::after {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 10px;
+    position: absolute;
+  }
+
+  button::before {
+    top: -2px;
+    left: -2px;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    transition: 0.5s all;
+  }
+  button::after {
+    top: -2px;
+    right: -2px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    transition: 0.5s all;
+  }
+  span::before {
+    bottom: -2px;
+    left: -2px;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    transition: 0.5s all;
+  }
+  span::after {
+    bottom: -2px;
+    right: -2px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    transition: 0.5s all;
+  }
+
+  button:hover::before,
+  button:hover::after {
+    width: 50px;
+    height: 50px;
+  }
+
+  button:hover span::before,
+  button:hover span::after {
+    width: 50px;
+    height: 50px;
+  }
+`;
+
+// export const FormLogoImage = styled.img`
+//   width: 100px;
+
+//   position: absolute;
+//   top: 15px;
+//   left: 5%;
+//   z-index: 101;
+// `;
+
 export const FormContent = styled.div`
   height: 100%;
   display: flex;
@@ -83,6 +168,17 @@ export const FormLabel = styled.label`
 export const FormInput = styled.input`
   padding: 16px 16px;
   margin-bottom: 32px;
+  border: none;
+  border-radius: 4px;
+  &:focus {
+    outline: none;
+  }
+`;
+
+export const FormInputMessage = styled.input`
+  padding: 16px 16px;
+  margin-bottom: 32px;
+  height: 150px;
   border: none;
   border-radius: 4px;
   &:focus {
