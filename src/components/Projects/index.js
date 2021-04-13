@@ -1,9 +1,9 @@
 import React from "react";
-import Icon1 from "../../images/authxrs2.png";
+import Icon1 from "../../images/authxrs4.png";
 import Icon2 from "../../images/safertravels2.png";
 import Icon3 from "../../images/codecafe2.png";
 import Icon4 from "../../images/mydocuments.svg";
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 import {
   ProjectsContainer,
   ProjectsH1,
