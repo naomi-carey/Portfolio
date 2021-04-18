@@ -61,7 +61,7 @@ const Contact = () => {
               <FormLabel htmlFor="for">Email</FormLabel>
               <FormInput id="email" type="email" required />
               <FormLabel htmlFor="for">Message</FormLabel>
-              <FormInputMessage id="message" type="text" required />
+              <FormInputMessage id="message" required />
               <FormButton type="submit">{status}</FormButton>
               {/* <Text>Forgot password</Text> */}
             </Form>

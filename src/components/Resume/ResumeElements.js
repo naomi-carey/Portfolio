@@ -1,10 +1,83 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+export const ResumeLogoBorder = styled.div`
+  button {
+    position: relative;
+    width: 90px;
+    font-size: 30px;
+    height: 48px;
+
+    ${"" /* margin-top: 80px; */}
+    margin-left: 31px;
+    background: none;
+
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 0;
+
+    box-sizing: content-box;
+    border: 2px solid transparent;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button::before,
+  button::after,
+  span::before,
+  span::after {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 10px;
+    position: absolute;
+  }
+
+  button::before {
+    top: -2px;
+    left: -2px;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    transition: 0.5s all;
+  }
+  button::after {
+    top: -2px;
+    right: -2px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    transition: 0.5s all;
+  }
+  span::before {
+    bottom: -2px;
+    left: -2px;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    transition: 0.5s all;
+  }
+  span::after {
+    bottom: -2px;
+    right: -2px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    transition: 0.5s all;
+  }
+
+  button:hover::before,
+  button:hover::after {
+    width: 50px;
+    height: 50px;
+  }
+
+  button:hover span::before,
+  button:hover span::after {
+    width: 50px;
+    height: 50px;
+  }
+`;
+
 export const ResumeContainer = styled.div`
-  ${"" /* min-height: 750px; */}
-  ${"" /* min-height: 100vh;
-  min-width: 100vw; */}
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -15,11 +88,9 @@ export const ResumeContainer = styled.div`
   z-index: 0;
   overflow: hidden;
   background: #010101;
-
   @media screen and (max-width: 768px) {
     padding: 10px 0;
   }
-
   @media screen and (max-width: 480px) {
     padding: 80 0;
     margin-bottom: 0px;
@@ -27,23 +98,20 @@ export const ResumeContainer = styled.div`
 `;
 
 export const ResumeWrapper = styled.div`
-  max-width: 1000px;
+  height: 100%;
   margin: 0 30px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 0 50px;
-  ${"" /* padding-top: 100px; */}
-
+  padding: 24px 50px 50px 50px;
   @media screen and (min-width: 768px) {
     margin-left: 32px;
     margin-top: 16px;
   }
-
-  @media screen and (min-width: 480px) {
-    margin-left: 16px;
-    margin-top: 10px;
+  @media screen and (max-width: 480px) {
+    padding: 0;
+    justify-content: flex-start;
   }
 `;
 
@@ -54,7 +122,6 @@ export const ResumeIcon = styled(Link)`
   color: #fff;
   font-weight: 700;
   font-size: 32px;
-
   @media screen and (min-width: 480px) {
     margin-left: 16px;
     margin-top: 8px;
@@ -74,26 +141,12 @@ export const ResumeH1 = styled.h1`
 `;
 
 export const ResumeImage = styled.img`
-  height: 747px;
-  width: 625px;
+  height: 100%;
   object-fit: cover;
   margin-bottom: 10px;
   max-width: 100vw;
-  max-height: 100vh;
-
-  @media screen and (max-width: 768px) {
-    height: 745px;
-    width: 600px;
-  }
-
-  @media screen and (max-width: 668px) {
-    height: 595px;
-    width: 450px;
-  }
-
   @media screen and (max-width: 480px) {
-    height: 450px;
-    width: 350px;
-    padding-top: 20px;
+    height: initial;
+    width: 100%;
   }
 `;

@@ -166,7 +166,7 @@ export const FormInput = styled.input`
   }
 `;
 
-export const FormInputMessage = styled.input`
+export const FormInputMessage = styled.textarea`
   padding: 16px 16px;
   margin-bottom: 32px;
   height: 150px;

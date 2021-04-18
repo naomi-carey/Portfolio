@@ -111,6 +111,8 @@ export const SocialIcons = styled.div`
 
 export const SocialIconLink = styled.a`
   color: #fff;
+  width:30px;
+  height:30px;
   font-size: 24px; 
 
   padding: 3px;

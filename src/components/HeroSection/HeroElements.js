@@ -40,6 +40,9 @@ export const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: left;
+  @media screen and (max-width: 300px) {
+    padding: 0;
+  }
 `;
 
 export const HeroH1 = styled.h1`
@@ -47,7 +50,6 @@ export const HeroH1 = styled.h1`
   font-size: 48px;
   text-align: left;
   user-select: none;
-
   @media screen and (max-width: 768px) {
     font-size: 40px;
   }
@@ -62,7 +64,6 @@ export const HeroP = styled.p`
   font-size: 24px;
   text-align: center;
   max-width: 600px;
-
   @media screen and (max-width: 768px) {
     font-size: 40px;
   }

@@ -1,86 +1,67 @@
 import styled from "styled-components";
-
 export const ProjectsContainer = styled.div`
-  ${"" /* height: 825px; */}
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  padding-bottom: 36px;
+  width: -webkit-fill-available;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #010606;
-
-  @media screen and (max-width: 768px) {
-    height: 1000px;
-  }
-
-  @media screen and (max-width: 480px) {
-    height: 1550px;
-  }
 `;
-
 export const ProjectsWrapper = styled.div`
-  max-width: 1000px;
+  height: 100%;
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
+  grid-auto-rows: 1fr;
   align-items: center;
   grid-gap: 16px;
-  padding: 0 50px;
-
+  padding: 0 30px;
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
-    padding: 10px 0;
-
-    @media screen and (max-width: 768px) {
-      grid-template-columns: 1fr 1fr;
-      padding: 0 20px;
-    }
-
-    @media screen and (max-width: 480px) {
-      grid-template-columns: 1fr;
-      padding: 0 20px;
-    }
+  }
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 300px;
+  }
+  @media screen and (max-width: 576px) {
+    grid-auto-rows: 250px;
+  }
+  @media screen and (max-width: 480px) {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 70vw;
+  }
+  div > div > div > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
-
 export const ProjectsCard = styled.div`
+  width: 100%;
+  height: 100%;
   background: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  gap: 8px;
   align-items: center;
   border-radius: 10px;
-  max-height: 340px;
-  padding: 30px;
-
+  padding: 45px;
   box-shadow: 0 1px 3px rgba(0.2);
-  transistion: all 0.2s ease-in-out;
-
   &:hover {
-    transform: scale(1.02);
-    transistion: all 0.2s ease-in-out;
     cursor: pointer;
   }
 `;
-
 export const ProjectsIcon = styled.img`
-  height: 180px;
-  width: 180px;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
   margin-bottom: 10px;
 `;
-
-// export const ProjectsH1 = styled.h1`
-//   font-size: 2.5rem;
-//   color: #fff;
-//   margin-bottom: 64px;
-
-//   @media screen and (max-width: 480) {
-//     font-size: 2rem;
-//     margin-bottom: 4px;
-//   }
-// `;
-
 export const ProjectsH1 = styled.h1`
   color: #009688;
   font-size: 16px;
@@ -92,7 +73,6 @@ export const ProjectsH1 = styled.h1`
   margin-top: 90px;
   user-select: none;
 `;
-
 export const ProjectButton = styled.a`
   border-radius: 2px;
   outline: none;
@@ -109,11 +89,9 @@ export const ProjectButton = styled.a`
   width: 200px;
   color: #009688;
   text-decoration: none;
-
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #010101;
-
     color: #fff;
   }
 `;
@@ -122,9 +100,21 @@ export const ProjectsH2 = styled.h2`
   margin-bottom: 10px;
   user-select: none;
 `;
-
 export const ProjectsP = styled.p`
   font-size: 1rem;
   text-align: center;
   user-select: none;
+`;
+export const EventWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  div {
+    ${"" /* pointer-events: none; */}
+    width: 100%;
+    height: 100%;
+    div {
+      width: 100%;
+      height: 100%;
+    }
+  }
 `;
