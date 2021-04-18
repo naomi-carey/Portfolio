@@ -10,8 +10,6 @@ import {
   Container,
   Icon,
   Form,
-  Text,
-  FormLogoImage,
   ContactLogoBorder,
   FormInputMessage,
 } from "./ContactElements";

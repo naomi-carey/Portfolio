@@ -34,7 +34,7 @@ function HeroSection() {
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary="true"
-            dark="true"
+            dark="false"
             smooth={true}
             duration={500}
             spy={true}

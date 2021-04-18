@@ -14,8 +14,6 @@ export const homeObjOne = {
   dark: true,
   primary: true,
   darkText: false,
-  primary: true,
-  darkText: false,
 };
 
 export const homeObjTwo = {
@@ -31,9 +29,9 @@ export const homeObjTwo = {
   imgStart: true,
   img: require("../../images/word-cloud3.png").default,
   alt: "My CV",
-  dark: false,
-  primary: true,
-  darkText: false,
+  dark: true,
+  // primary: true,
+  // darkText: false,
   primary: false,
   darkText: true,
 };

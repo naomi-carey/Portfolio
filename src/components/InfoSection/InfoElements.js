@@ -118,7 +118,7 @@ export const HeroButton2 = styled(Link)`
   background: ${({ primary }) => (primary ? "#009688" : "#010606")};
   white-space: nowrap;
   padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
-  color: ${({ dark }) => (dark ? "#010606" : "#fff")};
+  color: ${({ dark }) => (dark ? "#fff" : "#010606")};
   font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
   outline: none;
   border: none;
@@ -133,5 +133,7 @@ export const HeroButton2 = styled(Link)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: ${({ primary }) => (primary ? "#fff" : "#009688")};
+    color: ${({ primary }) => primary && "#010101"};
+    ${"" /* color: ${({ dark }) => (dark ? "#010606" : "#fff")}; */}
   }
 `;
