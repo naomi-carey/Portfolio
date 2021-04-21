@@ -21,7 +21,7 @@ export const homeObjTwo = {
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topLine: "My CV & Resume",
+  topLine: "My CV / Resume",
   headline: "Tried, trued and tested, seasoned IT expert. ",
   description:
     "Experience as a systems engineer, project manager, technical writer and web developer.",
