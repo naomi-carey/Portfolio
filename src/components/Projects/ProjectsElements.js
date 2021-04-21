@@ -58,6 +58,7 @@ export const ProjectsWrapper = styled.div`
 export const ProjectsCard = styled.div`
   width: 100%;
   height: 100%;
+  margin-bottom: 8px;
   background: #fff;
   display: flex;
   flex-direction: column;
