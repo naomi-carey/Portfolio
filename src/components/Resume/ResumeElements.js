@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 export const ResumeContainer = styled.div`
   width: 100vw;
+
   height: 100vh;
   position: fixed;
   padding: 24px;
@@ -32,7 +33,7 @@ export const ResumeLogoBorder = styled.div`
     position: relative;
     width: 90px;
     font-size: 30px;
-    height: 100%;
+    height: 48px;
     ${"" /* margin-top: 80px; */}
     margin-left: 31px;
     background: none;

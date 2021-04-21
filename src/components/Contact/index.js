@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import emailjs from "emailjs-com";
+
 import {
   FormButton,
   FormContent,
@@ -15,29 +17,26 @@ import {
 } from "./ContactElements";
 
 const Contact = () => {
-  const [status, setStatus] = useState("Submit");
+  // const [status, setStatus] = useState("Submit");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus("Sending...");
-    const { name, email, message } = e.target.elements;
-    let details = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
-
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(details),
-    });
-
-    setStatus("Submit");
-    let result = await response.json();
-    alert(result.status);
+    emailjs
+      .sendForm(
+        "service_ch2q1dr",
+        "template_f7cysu9",
+        e.target,
+        "user_YwOT6EWCIhhCdmqRdSOBg"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
   };
 
   return (
@@ -55,13 +54,13 @@ const Contact = () => {
             <Form onSubmit={handleSubmit}>
               <FormH1>Have a question or want to work together?</FormH1>
               <FormLabel htmlFor="for">Name</FormLabel>
-              <FormInput id="name" type="text" required />
+              <FormInput id="name" type="text" name="name" required />
               <FormLabel htmlFor="for">Email</FormLabel>
-              <FormInput id="email" type="email" required />
+              <FormInput id="email" type="email" name="email" required />
               <FormLabel htmlFor="for">Message</FormLabel>
-              <FormInputMessage id="message" required />
-              <FormButton type="submit">{status}</FormButton>
-              {/* <Text>Forgot password</Text> */}
+              <FormInputMessage id="message" name="message" required />
+              {/* <FormButton type="submit">{status}</FormButton> */}
+              <FormButton type="submit">Send</FormButton>
             </Form>
           </FormContent>
         </FormWrap>
