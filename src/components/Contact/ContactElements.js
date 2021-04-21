@@ -3,15 +3,14 @@ import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   height: 100vh;
-  ${"" /* min-height: 692px; */}
-  ${"" /* position: fixed; */}
-  ${
-    "" /* bottom: 0;
+  min-height: 692px;
+  ${"" /* position: fixed;  */}
+  bottom: 0;
   left: 0;
   right: 0;
   top: 0;
   z-index: 0;
-  overflow: hidden; */
+  ${"" /* overflow: hidden;  */}
   }
   background: #010101;
 `;
@@ -144,10 +143,12 @@ export const Form = styled.form`
     padding: 32px 32px;
   }
 
-  @media screen and (max-width: 400px) {
+  ${
+    "" /* @media screen and (max-width: 400px) {
     padding: 20px 32px;
     margin-bottom: 100px;
     
+  } */
   }
   }
 `;
