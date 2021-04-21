@@ -1,6 +1,6 @@
-import Icon1 from "../../images/authxrs4.png";
-import Icon2 from "../../images/safertravels2.png";
-import Icon3 from "../../images/codecafe2.png";
+import Icon1 from "../../images/authxrs1.png";
+import Icon2 from "../../images/safertravels6.png";
+import Icon3 from "../../images/codecafe3.png";
 import Icon4 from "../../images/mydocuments.svg";
 import { ProjectsIcon } from "./ProjectsElements";
 
@@ -10,21 +10,25 @@ export const projects = [
   {
     image: () => <ProjectsIcon pic={Icon1} alt="Authxrs image" />,
     title: "Authxrs",
-    desc: "React.js / Node.js / Styled Components",
+    desc:
+      "Non profit publishing house, offering books, podcasts and short stories.  Project built with React, Node.js, Hooks & Styled Components.",
+
     button: "View the site",
     link: "https://the-authors.netlify.app/",
   },
   {
     image: () => <ProjectsIcon pic={Icon2} alt="Safer Travels image" />,
     title: "Safer Travel",
-    desc: "React.js / Hooks / CSS",
+    desc:
+      "COVID travel application, offering latest statistics and airline tickets.  Project bult with React, CSS and consuming multiple APIs.",
     button: "View the site",
     link: "https://zen-albattani-4c735b.netlify.app",
   },
   {
     image: () => <ProjectsIcon pic={Icon3} alt="Code Cafe image" />,
     title: "Code Cafe",
-    desc: "JavaScript / HTML / CSS",
+    desc:
+      "Cafe offering coffee, snacks and welcomimg coding space.  Project built with JavaScript,  HTML & CSS.",
     button: "View the site",
     link: "https://heuristic-payne-285218.netlify.app",
   },

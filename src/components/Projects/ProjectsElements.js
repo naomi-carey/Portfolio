@@ -138,6 +138,7 @@ export const ProjectsP = styled.p`
   text-align: center;
   user-select: none;
 `;
+
 export const EventWrapper = styled.div`
   width: 100%;
   height: 100%;
