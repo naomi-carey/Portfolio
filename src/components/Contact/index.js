@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 import emailjs from "emailjs-com";
 
 import {
@@ -17,8 +15,6 @@ import {
 } from "./ContactElements";
 
 const Contact = () => {
-  // const [status, setStatus] = useState("Submit");
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     emailjs
