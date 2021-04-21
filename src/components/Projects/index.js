@@ -2,14 +2,15 @@ import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
 import { projects } from "./data";
 import {
+  EventWrapper,
+  ProjectButton,
+  ProjectsCard,
   ProjectsContainer,
   ProjectsH1,
-  ProjectsWrapper,
-  ProjectsCard,
   ProjectsH2,
   ProjectsP,
-  ProjectButton,
-  EventWrapper,
+  ProjectsWrapper,
+  TitleWrapper,
 } from "./ProjectsElements";
 const Projects = ({ project, index }) => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -40,6 +41,7 @@ const Projects = ({ project, index }) => {
       >
         <ProjectsCard>{project.image()}</ProjectsCard>
         <ProjectsCard>
+          {" "}
           <ProjectsH2>{project.title}</ProjectsH2>
           <ProjectsP>{project.desc}</ProjectsP>
           <ProjectButton onClick={() => handleClick(project.link)}>
@@ -53,7 +55,9 @@ const Projects = ({ project, index }) => {
 const ProjectsMap = () => {
   return (
     <ProjectsContainer id="portfolio">
-      <ProjectsH1>My Projects</ProjectsH1>
+      <TitleWrapper>
+        <ProjectsH1>My Projects</ProjectsH1>
+      </TitleWrapper>
       <ProjectsWrapper>
         {projects.map((item, index) => (
           <Projects index={index} project={item} key={`card-${index}`} />
