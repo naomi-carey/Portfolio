@@ -25,12 +25,15 @@ export const FormWrap = styled.div`
 `;
 
 export const Icon = styled(Link)`
-  margin-left: 32px;
-  margin-top: 32px;
+  ${"" /* margin-left: 32px;
+  margin-top: 32px; */}
+  top: 0;
+  left: 0;
   text-decoration: none;
   color: #fff;
   font-weight: 700;
   font-size: 32px;
+  z-index: 1;
 
   @media screen and (min-width: 480px) {
     margin-left: 16px;
@@ -143,7 +146,7 @@ export const Form = styled.form`
   ${"" /* added media query below*/}
   @media screen and (max-width: 400px) {
     padding: 80px 32px;
-    margin-bottom: 150px;
+    margin-bottom: 130px;
   }
 `;
 
