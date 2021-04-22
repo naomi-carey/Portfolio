@@ -34,6 +34,7 @@ export const InfoRow = styled.div`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+
   grid-template-areas: ${({ imgStart }) =>
     imgStart ? `'col2 col1'` : `'col1 col2'`};
   @media screen and (max-width: 768px) {

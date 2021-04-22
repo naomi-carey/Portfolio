@@ -185,6 +185,7 @@ export const NavBtn = styled.nav`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+
   @media screen and (max-width: 768px) {
     display: none;
   }

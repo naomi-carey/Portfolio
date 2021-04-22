@@ -20,7 +20,7 @@ export const projects = [
     image: () => <ProjectsIcon pic={Icon2} alt="Safer Travels image" />,
     title: "Safer Travel",
     desc:
-      "COVID travel application, offering latest statistics and airline tickets.  Project bult with React, CSS and consuming multiple APIs.",
+      "COVID travel application, offering latest statistics and airline tickets.  Project built with React, JavaScript, CSS while utilizing multiple APIs.",
     button: "View the site",
     link: "https://zen-albattani-4c735b.netlify.app",
   },
@@ -28,7 +28,7 @@ export const projects = [
     image: () => <ProjectsIcon pic={Icon3} alt="Code Cafe image" />,
     title: "Code Cafe",
     desc:
-      "Cafe offering coffee, snacks and welcomimg coding space.  Project built with JavaScript,  HTML & CSS.",
+      "Coffee shop offering baked goods, gourmet coffee and a welcomimg coding space.  Project built with JavaScript,  HTML & CSS.",
     button: "View the site",
     link: "https://heuristic-payne-285218.netlify.app",
   },
