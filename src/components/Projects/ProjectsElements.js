@@ -3,18 +3,33 @@ export const ProjectsContainer = styled.div`
   min-height: 100vh;
   padding-bottom: 36px;
   width: -webkit-fill-available;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background: #010606;
 `;
 export const ProjectsWrapper = styled.div`
   min-height: calc(100vh - 150px);
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0 24px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 16px;
   margin: 0 auto;
@@ -22,6 +37,7 @@ export const ProjectsWrapper = styled.div`
     height: 300px;
   }
   @media screen and (max-width: 1440px) {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     div {
       width: 46%;
@@ -60,10 +76,19 @@ export const ProjectsCard = styled.div`
   height: 100%;
   margin-bottom: 8px;
   background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   gap: 8px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   border-radius: 10px;
   padding: 45px;
@@ -101,9 +126,12 @@ export const TitleWrapper = styled.div`
   width: 100%;
   padding-top: 100px;
   height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  align-items: flex-start;
   user-select: none;
 `;
 
@@ -116,8 +144,14 @@ export const ProjectButton = styled.a`
   ${"" /* border: 1px solid #010101; */}
   border: none;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
   width: 200px;

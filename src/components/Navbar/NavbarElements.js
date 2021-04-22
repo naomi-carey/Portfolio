@@ -4,23 +4,31 @@ import { Link as LinkScroll } from "react-scroll";
 
 export const Nav = styled.nav`
   background: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")};
-
   height: 80px;
   margin-top: -80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-size: 1rem;
   position: sticky;
   top: 0;
   z-index: 10;
-
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
 `;
 export const NavbarContainer = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   height: 80px;
   width: 100%;
@@ -33,7 +41,11 @@ export const NavLogo = styled(LinkRouter)`
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-left: 24px;
   font-weight: bold;
@@ -46,22 +58,18 @@ export const NavLogoBorder = styled.div`
     width: 90px;
     font-size: 30px;
     height: 48px;
-
     margin-top: 15px;
     background: none;
-
     border: none;
     cursor: pointer;
     color: white;
     padding: 0;
-
     box-sizing: content-box;
     border: 2px solid transparent;
     &:focus {
       outline: none;
     }
   }
-
   button::before,
   button::after,
   span::before,
@@ -72,7 +80,6 @@ export const NavLogoBorder = styled.div`
     height: 10px;
     position: absolute;
   }
-
   button::before {
     top: -2px;
     left: -2px;
@@ -101,13 +108,11 @@ export const NavLogoBorder = styled.div`
     border-right: 2px solid white;
     transition: 0.5s all;
   }
-
   button:hover::before,
   button:hover::after {
     width: 50px;
     height: 50px;
   }
-
   button:hover span::before,
   button:hover span::after {
     width: 50px;
@@ -117,7 +122,6 @@ export const NavLogoBorder = styled.div`
 
 export const LogoImage = styled.img`
   width: 100px;
-
   position: absolute;
   top: 15px;
   left: 5%;
@@ -126,7 +130,6 @@ export const LogoImage = styled.img`
 
 export const MobileIcon = styled.div`
   display: none;
-
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
@@ -140,12 +143,15 @@ export const MobileIcon = styled.div`
 `;
 
 export const NavMenu = styled.ul`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   list-style: none;
   text-align: center;
   margin-right: -22px;
-
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -157,22 +163,28 @@ export const NavItem = styled.li`
 
 export const NavLinks = styled(LinkScroll)`
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-
   &.active {
     border-bottom: 3px solid #009688;
   }
 `;
 
 export const NavBtn = styled.nav`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -189,7 +201,6 @@ export const NavBtnLink = styled(LinkRouter)`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;

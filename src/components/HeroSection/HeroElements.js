@@ -3,8 +3,11 @@ import { MdArrowDownward, MdArrowForward } from "react-icons/md";
 
 export const HeroContainer = styled.div`
   background: #0c0c0c;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: left;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 0 30px;
   height: 800px;
@@ -37,9 +40,13 @@ export const HeroContent = styled.div`
   max-width: 1200px;
   position: absolute;
   padding: 8px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
-  align-items: left;
   @media screen and (max-width: 300px) {
     padding: 0;
   }
@@ -74,9 +81,13 @@ export const HeroP = styled.p`
 
 export const HeroBtnWrapper = styled.div`
   margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; ;
 `;
 
 export const ArrowFoward = styled(MdArrowForward)`

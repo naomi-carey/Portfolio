@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 export const ResumeContainer = styled.div`
   width: 100vw;
-
   height: 100vh;
   position: fixed;
   padding: 24px;
@@ -99,9 +98,18 @@ export const ResumeLogoBorder = styled.div`
 
 export const ResumeWrapper = styled.div`
   height: calc(100% - 80px);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 32px;
 `;

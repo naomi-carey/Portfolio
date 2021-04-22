@@ -4,26 +4,28 @@ import { Link } from "react-router-dom";
 export const Container = styled.div`
   height: 100vh;
   min-height: 692px;
-  ${"" /* position: fixed;  */}
   bottom: 0;
   left: 0;
   right: 0;
   top: 0;
   z-index: 0;
   overflow: hidden; 
-  }
+}
   background: #010101;
 `;
 
 export const FormWrap = styled.div`
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-
-  @media screen and (min-width: 400px) {
-    height: 80%;
-  }
 `;
 
 export const Icon = styled(Link)`
@@ -33,7 +35,6 @@ export const Icon = styled(Link)`
   color: #fff;
   font-weight: 700;
   font-size: 32px;
-
   @media screen and (min-width: 480px) {
     margin-left: 16px;
     margin-top: 8px;
@@ -41,28 +42,25 @@ export const Icon = styled(Link)`
 `;
 
 export const ContactLogoBorder = styled.div`
+  height: 90px;
   button {
     position: relative;
     width: 90px;
     font-size: 30px;
     height: 48px;
-
     margin-top: 40px;
     margin-left: 31px;
     background: none;
-
     border: none;
     cursor: pointer;
     color: white;
     padding: 0;
-
     box-sizing: content-box;
     border: 2px solid transparent;
     &:focus {
       outline: none;
     }
   }
-
   button::before,
   button::after,
   span::before,
@@ -73,7 +71,6 @@ export const ContactLogoBorder = styled.div`
     height: 10px;
     position: absolute;
   }
-
   button::before {
     top: -2px;
     left: -2px;
@@ -102,54 +99,56 @@ export const ContactLogoBorder = styled.div`
     border-right: 2px solid white;
     transition: 0.5s all;
   }
-
   button:hover::before,
   button:hover::after {
     width: 50px;
     height: 50px;
   }
-
   button:hover span::before,
   button:hover span::after {
     width: 50px;
     height: 50px;
   }
+  @media screen and (max-width: 480px) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 0 32px 32px 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
 `;
 
 export const FormContent = styled.div`
-  height: 100%;
+  min-height: calc(100vh - 90px);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-
-  @media screen and (max-width: 480px) {
-    padding: 10px;
-  }
+  padding-bottom: 32px;
 `;
 
 export const Form = styled.form`
   background: #010101;
   max-width: 400px;
-  height: auto;
   width: 100%;
   ${"" /* z-index: 1; */}
+  display: -ms-grid;
   display: grid;
-  margin: 0 auto;
+  margin: 0 auto 24px auto;
   padding: 80px 32px;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
-
   @media screen and (min-width: 400px) {
     padding: 32px 32px;
-  }
-
-  ${
-    "" /* @media screen and (max-width: 400px) {
-    padding: 20px 32px;
-    margin-bottom: 100px;
-    
-  } */
-  }
   }
 `;
 
@@ -199,7 +198,6 @@ export const FormButton = styled.button`
   &:focus {
     outline: none;
   }
-
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;

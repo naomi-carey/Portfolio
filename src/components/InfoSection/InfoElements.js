@@ -4,10 +4,8 @@ import { Link } from "react-router-dom";
 export const InfoContainer = styled.div`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
-
   @media screen and (max-width: 768px) {
     padding: 100px 0;
-
     @media screen and (max-width: 480px) {
       padding: 80 0;
       margin-bottom: 4px;
@@ -16,6 +14,7 @@ export const InfoContainer = styled.div`
 `;
 // added above media query at 480
 export const InfoWrapper = styled.div`
+  display: -ms-grid;
   display: grid;
   z-index: 1;
   height: 860px;
@@ -24,21 +23,23 @@ export const InfoWrapper = styled.div`
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 `;
 export const InfoRow = styled.div`
+  display: -ms-grid;
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-
   grid-template-areas: ${({ imgStart }) =>
     imgStart ? `'col2 col1'` : `'col1 col2'`};
-
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
       imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
   }
-
   @media screen and (max-width: 480px) {
     height: 750px;
   }
@@ -97,8 +98,9 @@ export const SubTitle = styled.p`
 `;
 
 export const BtnWrap = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
 `;
 
 export const ImgWrap = styled.div`
@@ -108,7 +110,6 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
   width: 100%;
-
   margin: 0 0 10px 0;
   padding-right: 0;
 `;
@@ -123,13 +124,18 @@ export const HeroButton2 = styled(Link)`
   outline: none;
   border: none;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
   width: 200px;
   text-decoration: none;
-
   &:hover {
     transition: all 0.2s ease-in-out;
     background: ${({ primary }) => (primary ? "#fff" : "#009688")};

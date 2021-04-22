@@ -9,7 +9,10 @@ export const SideBarContainer = styled.aside`
   width: 100%;
   height: 100%;
   background: #0d0d0d;
+  display: -ms-grid;
   display: grid;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   top: 0;
   left: 0;
@@ -37,18 +40,25 @@ export const SideBarWrapper = styled.div`
 `;
 
 export const SideBarMenu = styled.ul`
+  display: -ms-grid;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 80px);
+  -ms-grid-rows: repeat(6, 80px);
   text-align: center;
-
   @media screen and (max-widthl 480px) {
     grid-template-rows: repeat(6, 60px);
   }
 `;
 export const SideBarLink = styled(LinkScroll)`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   font-size: 1.5rem;
   text-decoration: none;
@@ -57,7 +67,6 @@ export const SideBarLink = styled(LinkScroll)`
   text-decoration: none;
   color: #fff;
   cursor: pointer;
-
   &:hover {
     color: #009688;
     transition: 0.2s ease-in-out;
@@ -65,7 +74,11 @@ export const SideBarLink = styled(LinkScroll)`
 `;
 
 export const SideBtnWrap = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 `;
 
@@ -81,12 +94,9 @@ border: none;
 cursor: pointer;
 transition: 0.2s ease-in-out;
 text-decoration: none;
-
 &:hover {
   transition: all 0.2s ease-in-out;
   background: #fff;
   color: color: #010606;
-
 }
-
 `;

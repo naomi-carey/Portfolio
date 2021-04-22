@@ -8,8 +8,12 @@ export const FooterContainer = styled.footer`
 
 export const FooterWrap = styled.div`
   padding: 48px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   align-items: center;
   max-width: 1100px;
@@ -17,32 +21,36 @@ export const FooterWrap = styled.div`
 `;
 
 export const FooterLinksContainer = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-
   @media screen and (max-width: 820px) {
     padding-top: 32px;
   }
 `;
 
 export const FooterLinksWrapper = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-
   @media screen and (max-width: 820px) {
     flex-direction: column;
   }
 `;
 
 export const FooterLinkItems = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   margin: 16px;
   text-align: left;
   width: 160px;
   box-sizing: border-box;
   color: #fff;
-
   @media screen and (max-width: 420px) {
     margin: 0;
     padding: 10px;
@@ -58,7 +66,6 @@ export const FooterLink = styled(Link)`
   text-decoration: none;
   margin-bottom: 0.5rem;
   font-size: 14px;
-
   &:hover {
     color: #01bf71;
     transistion: 0.3s ease-out;
@@ -71,19 +78,26 @@ export const SocialMedia = styled.section`
 `;
 
 export const SocialMediaWrap = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   align-items: center;
   max-width: 1100px;
   margin: 40px auto 0 auto;
-
   @media screen and (max-width: 820px) {
     flex-direction: column;
   }
 `;
 
 export const SocialChevronWrap = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 `;
 export const SocialLogo = styled(Link)`
@@ -92,6 +106,8 @@ export const SocialLogo = styled(Link)`
   cursor: pointer;
   text-decoration: none;
   font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   margin-bottom: 16px;
@@ -103,7 +119,11 @@ export const WebsiteRights = styled.div`
   margin-bottom: 16px;
 `;
 export const SocialIcons = styled.div`
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   align-items: center;
   width: 240px;
@@ -114,14 +134,11 @@ export const SocialIconLink = styled.a`
   width:30px;
   height:30px;
   font-size: 24px; 
-
   padding: 3px;
   
  
-
  
   }
-
   &:hover {
     background: #fff;
     color: black;
@@ -135,7 +152,6 @@ export const SocialIconLink = styled.a`
 export const CheveronUpIcon = styled(BsChevronDoubleUp)`
   color: #fff;
   padding: 3px;
-
   &:hover {
     background: #fff;
     color: black;
