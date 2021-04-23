@@ -68,6 +68,7 @@ export const ProjectsWrapper = styled.div`
   @media screen and (max-width: 375px) {
     div {
       height: 200px;
+      margin-bottom: 8px;
     }
   }
 `;
