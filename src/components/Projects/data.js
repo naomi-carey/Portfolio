@@ -37,6 +37,6 @@ export const projects = [
     title: "Technical Documentation",
     desc: "Samples of technical documentation.",
     button: "View the site",
-    link: "https://safejourneys.atlassian.net/l/c/gFWwRqAT",
+    link: "https://github.com/naomi-carey/Stripe-React-FE-Docs",
   },
 ];
