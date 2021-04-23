@@ -1,4 +1,6 @@
 import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import {
   FormButton,
@@ -26,12 +28,36 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          // console.log(result.text);
+
+          toast("Thank you!  Your email has been sent successfully!", {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
         },
         (error) => {
-          console.log(error.text);
+          // console.log(error.text);
+
+          toast.error(
+            "Your email was not sent successfully.  Please try again.",
+            {
+              position: "top-center",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+            }
+          );
         }
       );
+
     e.target.reset();
   };
 
@@ -57,6 +83,7 @@ const Contact = () => {
               <FormInputMessage id="message" name="message" required />
               {/* <FormButton type="submit">{status}</FormButton> */}
               <FormButton type="submit">Send</FormButton>
+              <ToastContainer limit={1} />
             </Form>
           </FormContent>
         </FormWrap>
