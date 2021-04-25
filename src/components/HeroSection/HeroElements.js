@@ -33,6 +33,9 @@ export const VideoBg = styled.video`
   -o-object-fit: cover;
   object-fit: cover;
   background: #232a34;
+  .avia_playpause_icon {
+    display: none !important;
+  }
 `;
 
 export const HeroContent = styled.div`

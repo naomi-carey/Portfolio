@@ -1,30 +1,11 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 export const ResumeContainer = styled.div`
   width: 100vw;
   height: 100vh;
-  position: fixed;
-  padding: 24px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 0;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
   background: #010101;
-  @media screen and (max-width: 768px) {
-    padding: 10px 0;
-  }
-  @media screen and (max-width: 480px) {
-    padding: 80 0;
-    margin-bottom: 0px;
-  }
-`;
-
-export const ResumeIcon = styled(Link)`
-  height: 48px;
-  margin-bottom: 24px;
 `;
 
 export const ResumeLogoBorder = styled.div`
@@ -33,8 +14,7 @@ export const ResumeLogoBorder = styled.div`
     width: 90px;
     font-size: 30px;
     height: 48px;
-    ${"" /* margin-top: 80px; */}
-    margin-left: 31px;
+    margin: 15px 0 15px 31px;
     background: none;
     border: none;
     cursor: pointer;
@@ -97,33 +77,12 @@ export const ResumeLogoBorder = styled.div`
 `;
 
 export const ResumeWrapper = styled.div`
-  height: calc(100% - 80px);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+  margin: 16px 32px;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  margin: 32px;
-`;
-
-export const ResumeH1 = styled.h1`
-  color: #009688;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 700;
-  letter-space: 1.4px;
-  text-transform: uppercase;
-  margin-bottom: 16px;
-  ${"" /* margin-top: 90px; */}
-  user-select: none;
 `;
 
 export const ResumeImage = styled.div`
@@ -133,12 +92,4 @@ export const ResumeImage = styled.div`
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  /* height:100%;
-  object-fit: cover;
-  margin-bottom: 10px;
-  max-width: 100vw;
-  @media screen and (max-width: 480px) {
-    height: initial;
-    width:100%
-  } */
 `;

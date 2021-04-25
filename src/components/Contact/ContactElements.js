@@ -1,44 +1,9 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 export const Container = styled.div`
-  height: 100vh;
-  min-height: 692px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 0;
-  overflow: hidden; 
-}
+  min-height: 100vh;
+  width: 100vw;
   background: #010101;
-`;
-
-export const FormWrap = styled.div`
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-`;
-
-export const Icon = styled(Link)`
-  margin-left: 32px;
-  margin-top: 32px;
-  text-decoration: none;
-  color: #fff;
-  font-weight: 700;
-  font-size: 32px;
-  @media screen and (min-width: 480px) {
-    margin-left: 16px;
-    margin-top: 8px;
-  }
 `;
 
 export const ContactLogoBorder = styled.div`
@@ -109,23 +74,15 @@ export const ContactLogoBorder = styled.div`
     width: 50px;
     height: 50px;
   }
-  @media screen and (max-width: 480px) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    padding: 0 32px 32px 0;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
 `;
 
 export const FormContent = styled.div`
-  min-height: calc(100vh - 90px);
+  width: -webkit-fill-available;
+  min-height: -webkit-fill-available;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 16px 32px 48px 32px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -133,27 +90,19 @@ export const FormContent = styled.div`
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding-bottom: 32px;
+  gap: 40px;
 `;
 
 export const Form = styled.form`
   background: #010101;
   max-width: 400px;
   width: 100%;
-  ${"" /* z-index: 1; */}
   display: -ms-grid;
   display: grid;
-  margin: 0 auto 24px auto;
-  padding: 80px 32px;
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
-  @media screen and (min-width: 400px) {
-    padding: 32px 32px;
-  }
+  margin: 0 auto;
 `;
 
 export const FormH1 = styled.h1`
-  margin-bottom: 40px;
   color: #fff;
   font-size: 20px;
   font-weight: 400;
@@ -161,14 +110,12 @@ export const FormH1 = styled.h1`
   user-select: none;
 `;
 export const FormLabel = styled.label`
-  margin-bottom: 8px;
   font-size: 14px;
   color: #fff;
 `;
 
 export const FormInput = styled.input`
   padding: 16px 16px;
-  margin-bottom: 32px;
   border: none;
   border-radius: 4px;
   &:focus {
@@ -178,7 +125,6 @@ export const FormInput = styled.input`
 
 export const FormInputMessage = styled.textarea`
   padding: 16px 16px;
-  margin-bottom: 32px;
   height: 150px;
   border: none;
   border-radius: 4px;
@@ -205,9 +151,10 @@ export const FormButton = styled.button`
   }
 `;
 
-export const Text = styled.span`
-  text-align: center;
-  margin-top: 24px;
-  color: #fff;
-  font-size: 14px;
+export const QuestionWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 32px;
+  gap: 8px;
 `;

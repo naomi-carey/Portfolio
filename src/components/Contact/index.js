@@ -1,4 +1,5 @@
 import emailjs from "emailjs-com";
+import { useHistory } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -8,15 +9,15 @@ import {
   FormH1,
   FormInput,
   FormLabel,
-  FormWrap,
   Container,
-  Icon,
+  QuestionWrapper,
   Form,
   ContactLogoBorder,
   FormInputMessage,
 } from "./ContactElements";
 
 const Contact = () => {
+  const history = useHistory();
   const handleSubmit = async (e) => {
     e.preventDefault();
     emailjs
@@ -62,33 +63,32 @@ const Contact = () => {
   };
 
   return (
-    <>
-      <Container>
-        <FormWrap>
-          <Icon to="/">
-            <ContactLogoBorder>
-              <button>
-                <span style={{ fontFamily: "Dancing Script" }}>NC</span>
-              </button>
-            </ContactLogoBorder>
-          </Icon>
-          <FormContent>
-            <Form onSubmit={handleSubmit}>
-              <FormH1>Have a question or want to work together?</FormH1>
-              <FormLabel htmlFor="for">Name</FormLabel>
-              <FormInput id="name" type="text" name="name" required />
-              <FormLabel htmlFor="for">Email</FormLabel>
-              <FormInput id="email" type="email" name="email" required />
-              <FormLabel htmlFor="for">Message</FormLabel>
-              <FormInputMessage id="message" name="message" required />
-              {/* <FormButton type="submit">{status}</FormButton> */}
-              <FormButton type="submit">Send</FormButton>
-              <ToastContainer limit={1} />
-            </Form>
-          </FormContent>
-        </FormWrap>
-      </Container>
-    </>
+    <Container>
+      <ContactLogoBorder>
+        <button onClick={() => history.push("/")}>
+          <span style={{ fontFamily: "Dancing Script" }}>NC</span>
+        </button>
+      </ContactLogoBorder>
+      <FormContent>
+        <FormH1>Have a question or want to work together?</FormH1>
+        <Form onSubmit={handleSubmit}>
+          <QuestionWrapper>
+            <FormLabel htmlFor="for">Name</FormLabel>
+            <FormInput id="name" type="text" name="name" required />
+          </QuestionWrapper>
+          <QuestionWrapper>
+            <FormLabel htmlFor="for">Email</FormLabel>
+            <FormInput id="email" type="email" name="email" required />
+          </QuestionWrapper>
+          <QuestionWrapper>
+            <FormLabel htmlFor="for">Message</FormLabel>
+            <FormInputMessage id="message" name="message" required />
+          </QuestionWrapper>
+          <FormButton type="submit">Send</FormButton>
+          <ToastContainer limit={1} />
+        </Form>
+      </FormContent>
+    </Container>
   );
 };
 

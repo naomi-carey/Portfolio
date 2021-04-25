@@ -1,30 +1,26 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import {
   ResumeContainer,
+  ResumeLogoBorder,
   ResumeWrapper,
   ResumeImage,
-  ResumeIcon,
-  ResumeLogoBorder,
 } from "./ResumeElements";
 import CvIcon from "../../images/cv2.png";
 
 function Resume() {
+  const history = useHistory();
   return (
-    <>
-      <ResumeContainer id="/resume">
-        <ResumeIcon to="/">
-          <ResumeLogoBorder>
-            <button>
-              <span style={{ fontFamily: "Dancing Script" }}>NC</span>
-            </button>
-          </ResumeLogoBorder>
-        </ResumeIcon>
-
-        <ResumeWrapper>
-          <ResumeImage src={CvIcon} />
-        </ResumeWrapper>
-      </ResumeContainer>
-    </>
+    <ResumeContainer id="resume">
+      <ResumeLogoBorder>
+        <button onClick={() => history.push("/")}>
+          <span style={{ fontFamily: "Dancing Script" }}>NC</span>
+        </button>
+      </ResumeLogoBorder>
+      <ResumeWrapper>
+        <ResumeImage src={CvIcon} />
+      </ResumeWrapper>
+    </ResumeContainer>
   );
 }
 
