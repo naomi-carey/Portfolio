@@ -22,7 +22,7 @@ export const projects = [
     desc:
       "COVID travel application, offering latest statistics and airline tickets.  Project built with React, JavaScript, CSS while utilizing multiple APIs.",
     button: "View the site",
-    link: "https://zen-albattani-4c735b.netlify.app",
+    link: "https://safe-travels.netlify.app/",
   },
   {
     image: () => <ProjectsIcon pic={Icon3} alt="Code Cafe image" />,
@@ -30,7 +30,7 @@ export const projects = [
     desc:
       "Coffee shop offering baked goods, gourmet coffee and a welcomimg coding space.  Project built with JavaScript,  HTML & CSS.",
     button: "View the site",
-    link: "https://heuristic-payne-285218.netlify.app",
+    link: "https://codingcafe.netlify.app/",
   },
   {
     image: () => <ProjectsIcon pic={Icon4} alt="Documentation image" />,
