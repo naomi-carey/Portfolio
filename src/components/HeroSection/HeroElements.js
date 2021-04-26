@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { MdArrowDownward, MdArrowForward } from "react-icons/md";
+import HeroImage from "../../images/herobg.png";
 
 export const HeroContainer = styled.div`
   background: #0c0c0c;
@@ -25,6 +26,13 @@ export const HeroBg = styled.div`
   width: 100%;
   height: 100%;
   overflow: hidden;
+  ${"" /* added static background image */}
+  background-image: url(${HeroImage});
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 `;
 
 export const VideoBg = styled.video`
@@ -33,8 +41,12 @@ export const VideoBg = styled.video`
   -o-object-fit: cover;
   object-fit: cover;
   background: #232a34;
-  .avia_playpause_icon {
+  ${"" /* .avia_playpause_icon {
     display: none !important;
+  } */}
+  ${"" /* added media query for static background */}
+  @media screen and (max-width: 375px) {
+    display: none;
   }
 `;
 
