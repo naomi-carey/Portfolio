@@ -27,7 +27,7 @@ export const HeroBg = styled.div`
   height: 100%;
   overflow: hidden;
   ${"" /* added static background image */}
-  /* background-image: url(${HeroImage}); */
+  background-image: url(${HeroImage});
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -41,15 +41,13 @@ export const VideoBg = styled.video`
   -o-object-fit: cover;
   object-fit: cover;
   background: #232a34;
-  .avia_playpause_icon {
+  /* .avia_playpause_icon {
     pointer-events: none;
     display: none !important;
-  }
-  ${
-    "" /* added media query for static background */
-  }/* @media screen and (max-width: 375px) {
-    display: none;
   } */
+  @media screen and (max-width: 425px) {
+    display: none;
+  }
 `;
 
 export const HeroContent = styled.div`
