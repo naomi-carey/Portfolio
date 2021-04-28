@@ -108,19 +108,22 @@ export const NavLogoBorder = styled.div`
     border-right: 2px solid white;
     transition: 0.5s all;
   }
-  /* button:hover::before,
-  button:hover::after {
-    width: 50px;
-    height: 50px;
-  }
-  button:hover span::before,
-  button:hover span::after {
-    width: 50px;
-    height: 50px;
-  } */
   /* smartphones, touchscreens */
-  @media (hover: none) and (pointer: coarse) {
+  /* @media (hover: none) and (pointer: coarse) {
     background-color: red;
+  } */
+  /* naomi */
+  @media not all and (hover: none) and (pointer: coarse) {
+    button:hover::before,
+    button:hover::after {
+      width: 50px;
+      height: 50px;
+    }
+    button:hover span::before,
+    button:hover span::after {
+      width: 50px;
+      height: 50px;
+    }
   }
 `;
 
