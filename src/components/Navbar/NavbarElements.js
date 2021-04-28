@@ -108,7 +108,7 @@ export const NavLogoBorder = styled.div`
     border-right: 2px solid white;
     transition: 0.5s all;
   }
-  button:hover::before,
+  /* button:hover::before,
   button:hover::after {
     width: 50px;
     height: 50px;
@@ -117,6 +117,10 @@ export const NavLogoBorder = styled.div`
   button:hover span::after {
     width: 50px;
     height: 50px;
+  } */
+  /* smartphones, touchscreens */
+  @media (hover: none) and (pointer: coarse) {
+    background-color: red;
   }
 `;
 
