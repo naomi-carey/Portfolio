@@ -48,7 +48,7 @@ export const VideoBg = styled.video`
   /* @media screen and (max-width: 425px) {
     display: none;
   } */
-  @media not all and (hover: none) and (pointer: coarse) {
+  @media (hover: none) and (pointer: coarse) {
     display: none;
   }
 `;
