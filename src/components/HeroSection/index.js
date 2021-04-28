@@ -22,9 +22,6 @@ function HeroSection() {
   return (
     <HeroContainer id="home">
       <HeroBg>
-        {/* {window.innerWidth > 425 && (
-          <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
-        )} */}
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
@@ -54,7 +51,6 @@ function HeroSection() {
             ) : (
               <ArrowFoward />
             )}
-            {/* View my work {hover ? <ArrowDown /> : <ArrowFoward />} */}
           </HeroButton>
         </HeroBtnWrapper>
       </HeroContent>

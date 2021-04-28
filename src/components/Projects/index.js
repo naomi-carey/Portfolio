@@ -36,7 +36,6 @@ const Projects = ({ project, index }) => {
       <ReactCardFlip
         cardZIndex={index.toString()}
         isFlipped={isFlipped}
-        // isFlipped={(index===3 || index===1) && true}
         flipDirection="horizontal"
       >
         <ProjectsCard>{project.image()}</ProjectsCard>

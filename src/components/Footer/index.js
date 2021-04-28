@@ -4,11 +4,6 @@ import { animateScroll as scroll } from "react-scroll";
 import {
   FooterContainer,
   FooterWrap,
-  // FooterLinksContainer,
-  // FooterLinksWrapper,
-  // FooterLinkItems,
-  // FooterLinkTitle,
-  // FooterLink,
   SocialMedia,
   SocialMediaWrap,
   SocialLogo,
@@ -27,39 +22,6 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterWrap>
-        {/* <FooterLinksContainer>
-          <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-
-              <FooterLink to="/contact">LinkedIn</FooterLink>
-              <FooterLink to="/contact">GitHub</FooterLink>
-            </FooterLinkItems>
-
-            <FooterLinkItems>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-
-              <FooterLink to="/contact">LinkedIn</FooterLink>
-              <FooterLink to="/contact">GitHub</FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper>
-
-          <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-
-              <FooterLink to="/contact">LinkedIn</FooterLink>
-              <FooterLink to="/contact">GitHub</FooterLink>
-            </FooterLinkItems>
-
-            <FooterLinkItems>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-
-              <FooterLink to="/contact">LinkedIn</FooterLink>
-              <FooterLink to="/contact">GitHub</FooterLink>
-            </FooterLinkItems>
-          </FooterLinksWrapper>
-        </FooterLinksContainer> */}
         <SocialMedia>
           <SocialChevronWrap>
             <SocialLogo to="/">

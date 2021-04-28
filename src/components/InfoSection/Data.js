@@ -30,8 +30,6 @@ export const homeObjTwo = {
   img: require("../../images/word-cloud3.png").default,
   alt: "My CV",
   dark: true,
-  // primary: true,
-  // darkText: false,
   primary: false,
   darkText: true,
 };

@@ -29,8 +29,6 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          // console.log(result.text);
-
           toast("Thank you!  Your email has been sent successfully!", {
             position: "top-center",
             autoClose: 5000,
@@ -42,8 +40,6 @@ const Contact = () => {
           });
         },
         (error) => {
-          // console.log(error.text);
-
           toast.error(
             "Your email was not sent successfully.  Please try again.",
             {
