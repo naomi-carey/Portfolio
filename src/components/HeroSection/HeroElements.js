@@ -45,9 +45,9 @@ export const VideoBg = styled.video`
     pointer-events: none;
     display: none !important;
   } */
-  @media screen and (max-width: 425px) {
+  /* @media screen and (max-width: 425px) {
     display: none;
-  }
+  } */
 `;
 
 export const HeroContent = styled.div`
