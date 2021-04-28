@@ -64,15 +64,17 @@ export const ContactLogoBorder = styled.div`
     border-right: 2px solid white;
     transition: 0.5s all;
   }
-  button:hover::before,
-  button:hover::after {
-    width: 50px;
-    height: 50px;
-  }
-  button:hover span::before,
-  button:hover span::after {
-    width: 50px;
-    height: 50px;
+  @media not all and (hover: none) and (pointer: coarse) {
+    button:hover::before,
+    button:hover::after {
+      width: 50px;
+      height: 50px;
+    }
+    button:hover span::before,
+    button:hover span::after {
+      width: 50px;
+      height: 50px;
+    }
   }
 `;
 
