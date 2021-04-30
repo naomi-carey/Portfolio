@@ -22,7 +22,8 @@ function HeroSection() {
   return (
     <HeroContainer id="home">
       <HeroBg>
-        <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
+        {window.innerWidth>425 &&
+        <VideoBg autoPlay loop muted src={Video} type="video/mp4" />}
       </HeroBg>
       <HeroContent>
         <HeroH1>Hello, I'm Naomi Carey.</HeroH1>

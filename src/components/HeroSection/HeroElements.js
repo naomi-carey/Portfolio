@@ -42,6 +42,9 @@ export const VideoBg = styled.video`
   @media (hover: none) and (pointer: coarse) {
     display: none;
   }
+  @media screen and (max-width: 425px) {
+    display:none
+  }
 `;
 
 export const HeroContent = styled.div`
