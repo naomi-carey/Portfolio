@@ -22,12 +22,25 @@ function HeroSection() {
   return (
     <HeroContainer id="home">
       <HeroBg>
-        {window.innerWidth>425 &&
-        <VideoBg autoPlay loop muted src={Video} type="video/mp4" />}
+        {window.innerWidth > 425 && (
+          <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
+        )}
       </HeroBg>
       <HeroContent>
-        <HeroH1>Hello, I'm Naomi Carey.</HeroH1>
-        <HeroH1>I'm a web developer.</HeroH1>
+        <HeroH1
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.7, duration: 0.7 }}
+        >
+          Hello, I'm Naomi Carey.
+        </HeroH1>
+        <HeroH1
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.5, duration: 1.5 }}
+        >
+          I'm a web developer.
+        </HeroH1>
 
         <HeroBtnWrapper>
           <HeroButton

@@ -1,7 +1,7 @@
 import Icon1 from "../../images/authxrs1.png";
 import Icon2 from "../../images/safertravels6.png";
 import Icon3 from "../../images/codecafe3.png";
-import Icon4 from "../../images/mydocuments20.png";
+import Icon4 from "../../images/mydocuments1.png";
 import { ProjectsIcon } from "./ProjectsElements";
 
 console.log(Icon1);
