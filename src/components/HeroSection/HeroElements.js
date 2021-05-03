@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { MdArrowDownward, MdArrowForward } from "react-icons/md";
 import HeroImage from "../../images/herobg.png";
+import { motion } from "framer-motion";
 
 export const HeroContainer = styled.div`
   background: #0c0c0c;
@@ -43,7 +44,7 @@ export const VideoBg = styled.video`
     display: none;
   }
   @media screen and (max-width: 425px) {
-    display:none
+    display: none;
   }
 `;
 
@@ -64,7 +65,7 @@ export const HeroContent = styled.div`
   }
 `;
 
-export const HeroH1 = styled.h1`
+export const HeroH1 = styled(motion.h1)`
   color: #fff;
   font-size: 48px;
   text-align: left;
