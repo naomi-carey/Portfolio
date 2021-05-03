@@ -6,7 +6,7 @@ import {
   ResumeWrapper,
   ResumeImage,
 } from "./ResumeElements";
-import CvIcon from "../../images/cv2.png";
+import CvIcon from "../../images/cv3.png";
 
 function Resume() {
   const history = useHistory();
