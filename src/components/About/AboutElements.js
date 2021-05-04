@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { motion } from "framer-motion";
 export const AboutContainer = styled.div`
   width: 100vw;
   height: 100vh;
@@ -81,8 +81,33 @@ export const AboutLogoBorder = styled.div`
 export const AboutWrapper = styled.div`
   height: -webkit-fill-available;
   width: -webkit-fill-available;
-  margin: 16px 32px;
+  margin: 0px 12px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  color: white;
+  overflow: hidden;
+`;
+
+export const AboutH1 = styled.h1``;
+
+export const AboutP = styled(motion.p)`
+  font-size: 18px;
+  @media screen and (min-width: 320px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 280px) {
+    font-size: 15px;
+  }
+`;
+
+export const AboutHr = styled.hr`
+  display: block;
+  height: 1px;
+  border: 0;
+  border-bottom: 3px solid #009688;
+  margin: 1em 0;
+  padding: 0;
 `;

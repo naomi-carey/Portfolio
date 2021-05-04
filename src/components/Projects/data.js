@@ -36,7 +36,7 @@ export const projects = [
     image: () => <ProjectsIcon pic={Icon4} alt="Documentation image" />,
     title: "Technical Documentation",
     desc: "Samples of technical documentation.",
-    button: "View the site",
+    button: "See my Github",
     link: "https://github.com/naomi-carey/Stripe-React-FE-Docs",
   },
 ];
