@@ -5,7 +5,6 @@ import {
   AboutContainer,
   AboutLogoBorder,
   AboutWrapper,
-  ResumeImage,
   AboutH1,
   AboutP,
   AboutHr,
@@ -23,19 +22,6 @@ const containerVariants = {
     transition: {
       type: "spring",
       delay: 0.5,
-    },
-  },
-};
-
-const nextVariants = {
-  hidden: {
-    x: "-100vw",
-  },
-  visible: {
-    x: 0,
-    transition: {
-      type: "spring",
-      stiffness: 120,
     },
   },
 };
