@@ -14,6 +14,7 @@ export const homeObjOne = {
   dark: true,
   primary: true,
   darkText: false,
+  path: "/about",
 };
 
 export const homeObjTwo = {
@@ -32,4 +33,5 @@ export const homeObjTwo = {
   dark: true,
   primary: false,
   darkText: true,
+  path: "/resume",
 };
