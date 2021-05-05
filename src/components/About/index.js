@@ -54,9 +54,9 @@ function About() {
         </motion.div>
 
         <AboutP
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.7, duration: 0.7 }}
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", delay: 0.7, duration: 0.7 }}
         >
           I am a web developer and technical writer living in Denver, CO. I have
           over 15+ years of IT experience in roles such as system support
@@ -64,9 +64,9 @@ function About() {
         </AboutP>
 
         <AboutP
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.7, duration: 1.7 }}
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", delay: 1.7, duration: 1.7 }}
         >
           I am interested in Human Experience Design rather User Experience
           Design. Human Experience Design considers the needs of users,
@@ -74,9 +74,9 @@ function About() {
         </AboutP>
 
         <AboutP
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 2.7, duration: 2.7 }}
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", delay: 2.7, duration: 2.7 }}
         >
           When I'm not developing and building things, you can find me running,
           hiking, cooking, spending time with my family or tossing the ball with
