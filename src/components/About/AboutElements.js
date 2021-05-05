@@ -96,12 +96,12 @@ export const AboutH1 = styled.h1``;
 export const AboutP = styled(motion.p)`
   width: 75%;
   font-size: 18px;
-  @media screen and (min-width: 320px) {
+  /* @media screen and (min-width: 320px) {
     font-size: 16px;
   }
   @media screen and (min-width: 280px) {
     font-size: 15px;
-  }
+  } */
 `;
 
 export const AboutHr = styled.hr`
