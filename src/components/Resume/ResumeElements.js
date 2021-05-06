@@ -81,6 +81,10 @@ export const ResumeLogoBorder = styled.div`
 export const ResumeWrapper = styled.div`
   height: -webkit-fill-available;
   width: -webkit-fill-available;
+  //Added the below for Apple
+  height: fill;
+  height: -moz-available;
+  //Added the above for APPLE
   margin: 16px 32px;
   display: flex;
   justify-content: center;
