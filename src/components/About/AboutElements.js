@@ -14,7 +14,8 @@ export const AboutLogoBorder = styled.div`
     width: 90px;
     font-size: 30px;
     height: 48px;
-    margin: 15px 0 15px 31px;
+    margin: 25px 0 15px 31px;
+    /* margin: 15px 0 15px 31px; */
     background: none;
     border: none;
     cursor: pointer;
@@ -96,12 +97,21 @@ export const AboutH1 = styled.h1``;
 export const AboutP = styled(motion.p)`
   width: 75%;
   font-size: 18px;
-  @media screen and (min-width: 320px) {
+
+  @media screen and (max-width: 360px) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 320px) {
+    font-size: 15px;
+  }
+
+  /* @media screen and (min-width: 320px) {
     font-size: 16px;
   }
   @media screen and (min-width: 280px) {
     font-size: 15px;
-  }
+  } */
 `;
 
 export const AboutHr = styled.hr`
