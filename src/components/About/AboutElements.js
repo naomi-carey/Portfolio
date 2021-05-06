@@ -14,7 +14,7 @@ export const AboutLogoBorder = styled.div`
     width: 90px;
     font-size: 30px;
     height: 48px;
-    margin: 25px 0 15px 31px;
+    margin: 20px 0 15px 31px;
     /* margin: 15px 0 15px 31px; */
     background: none;
     border: none;
