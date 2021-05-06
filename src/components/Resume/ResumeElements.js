@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const ResumeContainer = styled.div`
   width: 100vw;
@@ -91,7 +92,7 @@ export const ResumeWrapper = styled.div`
   align-items: center;
 `;
 
-export const ResumeImage = styled.div`
+export const ResumeImage = styled(motion.div)`
   width: 100%;
   height: 100%;
   background-image: ${(p) => `url(${p.src})`};
