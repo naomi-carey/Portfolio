@@ -31,6 +31,7 @@ const InfoSection = ({
   primary,
   dark,
   dark2,
+  path,
 }) => {
   return (
     <>
@@ -44,7 +45,7 @@ const InfoSection = ({
                 <SubTitle darkText={darkText}>{description}</SubTitle>
                 <BtnWrap>
                   <HeroButton2
-                    to="/resume"
+                    to={path}
                     duration={500}
                     exact="true"
                     offset={-80}

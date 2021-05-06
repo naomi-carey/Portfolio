@@ -1,6 +1,6 @@
 import styled from "styled-components";
-
-export const ResumeContainer = styled.div`
+import { motion } from "framer-motion";
+export const AboutContainer = styled.div`
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -8,7 +8,7 @@ export const ResumeContainer = styled.div`
   background: #010101;
 `;
 
-export const ResumeLogoBorder = styled.div`
+export const AboutLogoBorder = styled.div`
   button {
     position: relative;
     width: 90px;
@@ -78,24 +78,37 @@ export const ResumeLogoBorder = styled.div`
   }
 `;
 
-export const ResumeWrapper = styled.div`
+export const AboutWrapper = styled.div`
   height: -webkit-fill-available;
   width: -webkit-fill-available;
-  //Added the below for Apple
-  height: fill;
-  height: -moz-available;
-  //Added the above for APPLE
-  margin: 16px 32px;
+  margin: 0px 12px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  color: white;
+  overflow: hidden;
 `;
 
-export const ResumeImage = styled.div`
-  width: 100%;
-  height: 100%;
-  background-image: ${(p) => `url(${p.src})`};
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+export const AboutH1 = styled.h1``;
+
+export const AboutP = styled(motion.p)`
+  width: 75%;
+  font-size: 18px;
+  @media screen and (min-width: 320px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 280px) {
+    font-size: 15px;
+  }
+`;
+
+export const AboutHr = styled.hr`
+  display: block;
+  height: 1px;
+  border: 0;
+  border-bottom: 3px solid #009688;
+  margin: 1em 0;
+  padding: 0;
 `;
