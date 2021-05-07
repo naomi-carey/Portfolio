@@ -6,6 +6,7 @@ export const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
   background: #010101;
+  padding-top: 10px;
 `;
 
 export const AboutLogoBorder = styled.div`
