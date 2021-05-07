@@ -1,6 +1,6 @@
 import Icon1 from "../../images/authxrs1.png";
 import Icon2 from "../../images/safertravels6.png";
-import Icon3 from "../../images/codecafe3.png";
+import Icon3 from "../../images/beats3.png";
 import Icon4 from "../../images/mydocuments1.png";
 import { ProjectsIcon } from "./ProjectsElements";
 
@@ -26,11 +26,11 @@ export const projects = [
   },
   {
     image: () => <ProjectsIcon pic={Icon3} alt="Code Cafe image" />,
-    title: "Code Cafe",
+    title: "Beats Music",
     desc:
-      "Coffee shop offering baked goods, gourmet coffee and a welcomimg coding space.  Project built with JavaScript,  HTML & CSS.",
+      "Music player app offering ChillHop music.  Project built with React, JavaScript, Hooks & SCSS.",
     button: "View the site",
-    link: "https://codingcafe.netlify.app/",
+    link: "https://beats-music-player.netlify.app/",
   },
   {
     image: () => <ProjectsIcon pic={Icon4} alt="Documentation image" />,
