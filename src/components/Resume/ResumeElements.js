@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const ResumeContainer = styled.div`
+  padding-top: 10px;
   width: 100vw;
   height: 100vh;
   display: flex;

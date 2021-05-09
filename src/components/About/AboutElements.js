@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 export const AboutContainer = styled.div`
+  padding-top: 10px;
   width: 100vw;
   height: 100vh;
   display: flex;
