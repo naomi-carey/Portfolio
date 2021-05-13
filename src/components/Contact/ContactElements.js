@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Container = styled.div`
   min-height: 100vh;
@@ -111,12 +112,12 @@ export const FormH1 = styled.h1`
   text-align: center;
   user-select: none;
 `;
-export const FormLabel = styled.label`
+export const FormLabel = styled(motion.label)`
   font-size: 14px;
   color: #fff;
 `;
 
-export const FormInput = styled.input`
+export const FormInput = styled(motion.input)`
   padding: 16px 16px;
   border: none;
   border-radius: 4px;
@@ -125,7 +126,7 @@ export const FormInput = styled.input`
   }
 `;
 
-export const FormInputMessage = styled.textarea`
+export const FormInputMessage = styled(motion.textarea)`
   padding: 16px 16px;
   height: 150px;
   border: none;
@@ -135,7 +136,7 @@ export const FormInputMessage = styled.textarea`
   }
 `;
 
-export const FormButton = styled.button`
+export const FormButton = styled(motion.button)`
   background: #009688;
   padding: 16px 0;
   border: none;
