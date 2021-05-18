@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { MdArrowDownward, MdArrowForward } from "react-icons/md";
-import HeroImage from "../../images/herobg.png";
+import HeroImage from "../../images/herobg2.png";
 import { motion } from "framer-motion";
 
 export const HeroContainer = styled.div`
